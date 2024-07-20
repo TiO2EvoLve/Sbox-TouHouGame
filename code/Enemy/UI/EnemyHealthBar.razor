@@ -1,0 +1,18 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+@namespace TouhouGame
+
+
+<root>
+        <div class="fill" style="width:@(health)%"></div>
+</root>
+
+@code
+{
+
+	[Property,Range(0,100)] public float health { get; set; } = 100f;
+
+	protected override int BuildHash() => System.HashCode.Combine( health );
+}

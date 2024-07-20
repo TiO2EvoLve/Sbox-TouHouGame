@@ -1,0 +1,65 @@
+@using System;
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent;
+
+<root>
+
+	
+	<div class="menu">
+		<div class="title">Touhou Game</div>
+		<div class="option" onclick=@StartGame>Strat Game</div>
+		<div class="option" onclick=@Settings>options</div>
+		<div class="option" onclick=@Quit>quit</div>
+	</div>
+
+	<div class="teach">
+		<div class="teachimage"></div>
+	</div>
+	
+</root>
+
+@code
+{
+
+	public Component option { get; set; }
+	public Component difficult { get; set; }
+
+
+	[Property] public SoundEvent MenuSound;
+
+	protected override void OnStart()
+	{
+		difficult = Components.Get<MenuDifficult>();
+		option = Components.Get<MenuOption>();
+
+		difficult.Enabled = false;
+		option.Enabled = false;
+	}
+
+	void StartGame()
+	{
+		PlaySound();
+		Enabled = false;
+		difficult.Enabled = true;
+	}
+
+	void Settings()
+	{
+		PlaySound();
+		Enabled = false;
+		option.Enabled = true;
+	}
+
+	void Quit()
+	{
+		PlaySound();
+		Game.Close();
+	}
+
+	void PlaySound()
+	{
+		if ( MenuSound is not null ) Sound.Play( MenuSound );
+	}
+
+}

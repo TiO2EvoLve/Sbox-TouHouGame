@@ -1,0 +1,10 @@
+{
+  "Sequences": [
+    {
+      "Source": "sprite/spellcard.png",
+      "IsLooping": true,
+      "Frames": 64
+    }
+  ],
+  "OutputTypeString": "2D"
+}

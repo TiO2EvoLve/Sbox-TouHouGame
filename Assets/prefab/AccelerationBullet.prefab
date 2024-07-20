@@ -1,0 +1,54 @@
+{
+  "RootObject": {
+    "Id": "06f0fc87-304d-4ef7-95da-5e2db07b5894",
+    "Name": "accelerationbullet",
+    "Tags": "bullet",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "SpriteRenderer",
+        "Additive": false,
+        "CastShadows": false,
+        "Color": "1,1,1,1",
+        "DepthFeather": 0,
+        "FogStrength": 1,
+        "Opaque": false,
+        "Size": "5,5",
+        "Texture": "sprite/bullet01.vtex"
+      },
+      {
+        "__type": "AccelerationBullet"
+      },
+      {
+        "__type": "SphereCollider",
+        "Center": "0,0,0",
+        "IsTrigger": true,
+        "Radius": 1,
+        "Static": false,
+        "Surface": null
+      }
+    ],
+    "Children": [
+      {
+        "Id": "383c1b75-480d-4e18-955a-62136c334f8a",
+        "Name": "graze",
+        "Tags": "graze",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "SphereCollider",
+            "Center": "0,0,0",
+            "IsTrigger": false,
+            "Radius": 2,
+            "Static": false,
+            "Surface": null
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

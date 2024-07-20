@@ -1,0 +1,146 @@
+@using Sandbox;
+@using Sandbox.UI;
+@using System;
+@inherits PanelComponent
+
+<root>
+	<div class="box">
+
+		<div class="difficult">@GameSettings.Instance.difficult</div>
+
+		<div class="headbar">
+			<div class="text">
+				<h2>Max Score</h2>
+			</div>
+			<div class="score">
+				<h2>@(MaxScore)</h2>
+			</div>
+		</div>
+
+		<div class="headbar">
+			<div class="text">
+				<h2>Score</h2>
+			</div>
+			<div class="score">
+				@(Score)
+			</div>
+		</div>
+
+		<div class="headbar">
+			<div class="text">
+				<h2>Life</h2>
+			</div>
+			<div class="score">
+				@for (int i = 0; i < @Health; i++)
+				{
+					<div class="heart"></div>
+				}
+				@for (int i = 0; i < 8 - @Health; i++)
+				{
+					<div class="empty"></div>
+				}
+			</div>
+		</div>
+
+		<div class="headbar">
+			<div class="text">
+				<h2>Bomb</h2>
+			</div>
+			<div class="score">
+				@for (int i = 0; i < @Spellcard; i++)
+				{
+					<div class="star"></div>
+
+				}
+				@for (int i = 0; i < 8 - @Spellcard; i++)
+				{
+					<div class="empty"></div>
+				}
+			</div>
+		</div>
+
+		<div class="headbar">
+			<div class="text">
+				<h2>Power</h2>
+			</div>
+			<div class="score">
+				<h2>@Power</h2>
+				<div class="power"></div>
+			</div>
+		</div>
+
+		<div class="headbar">
+			<div class="text">
+				<h2>MaxPoint</h2>
+			</div>
+			<div class="score">
+				<h2>@MaxPoint</h2>
+				<div class="maxpoint"></div>
+			</div>
+		</div>
+		
+		<div class="headbar">
+			<div class="text">
+				<h2 >Graze</h2>
+			</div>
+			<div class="score">
+				<h2>@Graze</h2>
+			</div>
+		</div>
+		<div class="logobar">
+		</div>
+
+	</div>
+	
+	<div class=" "></div>
+</root>
+
+@code
+{
+    [Property] public GameManage GameManage{ get; set; }
+	[Property] public TouhouPlayer touhouPlayer {get; set; }
+    public int MaxScore =0;
+    public int Score=0;
+    int Health=0;
+    int Spellcard=0;
+    String Power = "0.00 \\ 4.00";
+    int Graze=0;
+	int MaxPoint=0;
+
+	
+	
+    protected override void OnStart()
+    {
+	    touhouPlayer = touhouPlayer.Components.Get<TouhouPlayer>();
+    }
+	//获取运行时间
+    String GetTime()
+    {
+        int time = (int)Time.Now;
+
+        TimeSpan timeSpan = TimeSpan.FromSeconds(time);
+
+        string formattedTime = string.Format("{0:D2}h:{1:D2}m:{2:D2}s",
+                                            timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds);
+        return formattedTime;
+    }
+	
+	protected override void OnUpdate()
+	{
+		
+		Health = touhouPlayer.health;
+		Spellcard = touhouPlayer.spellcard;
+		Score = touhouPlayer.Score * (int)DifficultyRatio.GetScoreRatio();
+		MaxScore = GameManage.MaxScore;
+		Graze = touhouPlayer.Graze;
+		Power = (float)Math.Round(touhouPlayer.Power,2) + "\\ 4.00";
+		MaxPoint = touhouPlayer.MaxPoint;
+		
+		
+	}
+
+
+    protected override int BuildHash() => System.HashCode.Combine(GetTime(),Health,Spellcard,MaxScore,Score,Graze,Power,MaxPoint);
+	
+	
+}

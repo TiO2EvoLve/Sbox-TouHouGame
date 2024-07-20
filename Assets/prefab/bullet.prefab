@@ -1,0 +1,61 @@
+{
+  "RootObject": {
+    "Id": "d4954de2-695d-4eaf-b560-8b512d1ee3fd",
+    "Name": "bullet",
+    "Tags": "bullet",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Bullet"
+      },
+      {
+        "__type": "SphereCollider",
+        "Center": "0,0,0",
+        "IsTrigger": true,
+        "Radius": 0.5,
+        "Static": false,
+        "Surface": null
+      }
+    ],
+    "Children": [
+      {
+        "Id": "448c4d26-380c-401c-8ef8-2332ac6e32d7",
+        "Name": "bullet",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "SpriteRenderer",
+            "Additive": false,
+            "CastShadows": false,
+            "Color": "1,1,1,1",
+            "DepthFeather": 0,
+            "FogStrength": 1,
+            "Opaque": false,
+            "Size": "5,5",
+            "Texture": "sprite/bullet02.vtex"
+          }
+        ]
+      },
+      {
+        "Id": "b30a87f6-cc6b-46b2-bb6a-6206d3df2402",
+        "Name": "graze",
+        "Tags": "graze",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "SphereCollider",
+            "Center": "0,0,0",
+            "IsTrigger": true,
+            "Radius": 2,
+            "Static": false,
+            "Surface": null
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

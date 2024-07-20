@@ -1,0 +1,11 @@
+{
+  "Sequences": [
+    {
+      "Source": "sprite/bullet02.png",
+      "IsLooping": true,
+      "Frames": 64
+    }
+  ],
+  "InputColorSpace": "SRGB",
+  "OutputTypeString": "2D"
+}

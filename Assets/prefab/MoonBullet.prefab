@@ -1,0 +1,48 @@
+{
+  "RootObject": {
+    "Id": "2dd8010c-29ce-451b-a3a0-2351d5bc1cb9",
+    "Name": "moonbullet",
+    "Tags": "bullet",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "SpriteRenderer",
+        "Additive": false,
+        "CastShadows": false,
+        "Color": "1,1,1,1",
+        "DepthFeather": 0,
+        "FogStrength": 1,
+        "Opaque": false,
+        "Size": "40,40",
+        "Texture": "sprite/moon.vtex"
+      },
+      {
+        "__type": "SphereCollider",
+        "Center": "0,0,0",
+        "IsTrigger": true,
+        "Radius": 10,
+        "Static": false,
+        "Surface": null
+      },
+      {
+        "__type": "MoonBullet",
+        "pos": {
+          "_type": "gameobject",
+          "go": "8e3cfd02-b5aa-4a8d-afec-458bba89f56f"
+        }
+      }
+    ],
+    "Children": [
+      {
+        "Id": "8e3cfd02-b5aa-4a8d-afec-458bba89f56f",
+        "Name": "pos",
+        "Position": "0,0,5",
+        "Enabled": true
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

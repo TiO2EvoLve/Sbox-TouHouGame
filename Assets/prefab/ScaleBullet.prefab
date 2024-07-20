@@ -1,0 +1,37 @@
+{
+  "RootObject": {
+    "Id": "3911a078-614b-446e-ae05-cb345190d85e",
+    "Name": "scalebullet",
+    "Tags": "bullet",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "SpriteRenderer",
+        "Additive": false,
+        "CastShadows": false,
+        "Color": "1,1,1,1",
+        "DepthFeather": 0,
+        "FogStrength": 1,
+        "Opaque": false,
+        "Size": "10,10",
+        "Texture": "sprite/bullet03.vtex"
+      },
+      {
+        "__type": "ScaleBullet"
+      },
+      {
+        "__type": "SphereCollider",
+        "Center": "0,0,0",
+        "IsTrigger": true,
+        "Radius": 2,
+        "Static": false,
+        "Surface": null
+      }
+    ],
+    "Children": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

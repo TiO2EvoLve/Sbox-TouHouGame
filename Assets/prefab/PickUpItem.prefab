@@ -1,0 +1,115 @@
+{
+  "RootObject": {
+    "Id": "e3cc3d57-7233-4fd4-851a-bcdfb98d2b9e",
+    "Name": "pickupitem",
+    "Tags": "pickup",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "SphereCollider",
+        "Center": "0,0,0",
+        "IsTrigger": true,
+        "Radius": 5,
+        "Static": false,
+        "Surface": null
+      },
+      {
+        "__type": "PickUpItem",
+        "Health": {
+          "_type": "gameobject",
+          "go": "27ac68a6-419b-4be6-b746-d7ff56c3ce6f"
+        },
+        "PickSound": "sounds/health_up.sound",
+        "pickUpType": "Health",
+        "Power": {
+          "_type": "gameobject",
+          "go": "7db28d95-c89f-4b23-a2c8-692c3a84618f"
+        },
+        "Score": {
+          "_type": "gameobject",
+          "go": "f5b6dd06-625f-4f55-b53c-86db1377e003"
+        },
+        "speed": 10,
+        "Spellcard": {
+          "_type": "gameobject",
+          "go": "179bb579-4937-426b-ba17-435040d353f5"
+        }
+      }
+    ],
+    "Children": [
+      {
+        "Id": "27ac68a6-419b-4be6-b746-d7ff56c3ce6f",
+        "Name": "health",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "SpriteRenderer",
+            "Additive": false,
+            "CastShadows": false,
+            "Color": "1,1,1,1",
+            "DepthFeather": 0,
+            "FogStrength": 1,
+            "Opaque": false,
+            "Size": "10,10",
+            "Texture": "sprite/health.vtex"
+          }
+        ]
+      },
+      {
+        "Id": "179bb579-4937-426b-ba17-435040d353f5",
+        "Name": "spellcard",
+        "Components": [
+          {
+            "__type": "SpriteRenderer",
+            "Additive": false,
+            "CastShadows": false,
+            "Color": "1,1,1,1",
+            "DepthFeather": 0,
+            "FogStrength": 1,
+            "Opaque": false,
+            "Size": "10,10",
+            "Texture": "sprite/spellcard.vtex"
+          }
+        ]
+      },
+      {
+        "Id": "f5b6dd06-625f-4f55-b53c-86db1377e003",
+        "Name": "Score",
+        "Components": [
+          {
+            "__type": "SpriteRenderer",
+            "Additive": false,
+            "CastShadows": false,
+            "Color": "1,1,1,1",
+            "DepthFeather": 0,
+            "FogStrength": 1,
+            "Opaque": false,
+            "Size": "10,10",
+            "Texture": "sprite/score.vtex"
+          }
+        ]
+      },
+      {
+        "Id": "7db28d95-c89f-4b23-a2c8-692c3a84618f",
+        "Name": "Power",
+        "Components": [
+          {
+            "__type": "SpriteRenderer",
+            "Additive": false,
+            "CastShadows": false,
+            "Color": "1,1,1,1",
+            "DepthFeather": 0,
+            "FogStrength": 1,
+            "Opaque": false,
+            "Size": "10,10",
+            "Texture": "sprite/power.vtex"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

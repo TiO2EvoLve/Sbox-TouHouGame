@@ -1,0 +1,57 @@
+{
+  "RootObject": {
+    "Id": "e1ec6850-922a-4b4b-a32e-692c2022731c",
+    "Name": "rotationbullet",
+    "Tags": "bullet",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "ModelRenderer",
+        "BodyGroups": 18446744073709551615,
+        "MaterialGroup": null,
+        "MaterialOverride": null,
+        "Model": "models/starbullet.vmdl",
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "RotationBullet",
+        "Bulletprefab": {
+          "_type": "gameobject",
+          "prefab": "prefab/bullet.prefab"
+        },
+        "FireSound": "sounds/bullet_fire3.sound"
+      },
+      {
+        "__type": "SphereCollider",
+        "Center": "0,0,0",
+        "IsTrigger": true,
+        "Radius": 4,
+        "Static": false,
+        "Surface": null
+      }
+    ],
+    "Children": [
+      {
+        "Id": "84203806-c2b7-41aa-9d09-ba8b4d557fd7",
+        "Name": "graze",
+        "Tags": "graze",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "SphereCollider",
+            "Center": "0,0,0",
+            "IsTrigger": true,
+            "Radius": 9,
+            "Static": false,
+            "Surface": null
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

@@ -1,0 +1,60 @@
+Dead
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	justify-content: center;
+	align-items: center;
+	pointer-events: all;
+	font-family: Poppins, serif;
+	color: #fff;
+	
+	
+	.box{
+		flex-direction: column;
+		width: 600px;
+		height: 600px;
+		justify-content: flex-start;
+		align-items: center;
+		background-color: rgba(255, 255, 255, 0.1);
+		border-radius: 30px;
+		box-shadow: 0 25px 45px rgba(0, 0, 0, 1);
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		border-right: 1px solid rgba(255, 255, 255, 0.2);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		backdrop-filter: blur(10px);
+		
+		
+	}
+	h1{
+		font-size: 50px;
+		margin-top: 40px;
+		
+	}
+	h2{
+		margin-top: 40px;
+		font-size: 30px;
+		
+	}
+	.RemakeButton{
+		color: #ffffff;
+		font-size: 30px;
+		margin-top: 30%;
+		width: 80%;
+		height: 10%;
+		justify-content: center;
+		align-items: center;
+		background-color: rgb(255, 47, 100);
+		border-radius: 30px;
+		border: 1px solid rgba(255, 255, 255, 0.75);
+		border-right: 1px solid rgba(255, 255, 255, 0.2);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		transition: transform 0.3s ease-in-out;
+	}
+	.RemakeButton:hover{
+		transform: scale(1.1);
+		background-color: rgb(35, 255, 0);
+	}
+}

@@ -1,0 +1,72 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="box">
+		
+		@if ( gameover )
+		{
+			<h1>Game Fnish!</h1>
+		}
+		else
+		{
+			<h1>You Dead</h1>
+		}
+		<h2>Score : @score</h2>
+		
+		<h2>Max Score : @maxscore</h2>
+		
+		
+		@if ( gameover )
+		{
+			<div class="RemakeButton" onclick="@BackMenu">Click to Back Menu</div>
+		}
+		else
+		{
+			<div class="RemakeButton" onclick="@Remake">Click to Play Again</div>
+		}
+		
+		
+		
+	</div>
+</root>
+
+@code
+{
+	int score;
+	int maxscore;
+	bool gameover;
+	
+	[Property]public ScoreBoard ScoreBoard { get; set; }
+	[Property]public GameManage GameManage { get; set; }
+	
+	protected override void OnStart()
+	{
+		Enabled = false;
+	}
+
+	protected override void OnUpdate()
+	{
+		if ( ScoreBoard is not null )
+		{
+			score = ScoreBoard.Score;
+			maxscore = ScoreBoard.MaxScore;	
+			if ( score > maxscore )
+			{
+				maxscore = score;
+			}
+		}
+		gameover = GameManage.GameOver;
+
+	}
+	void Remake()
+	{
+		GameManage.RemakeGame();
+	}
+
+	void BackMenu()
+	{
+		Game.ActiveScene.LoadFromFile("/scenes/menu.scene");
+	}
+}

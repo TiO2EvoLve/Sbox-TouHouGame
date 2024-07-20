@@ -1,0 +1,64 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="leaderboard">
+	
+		@if (chart is null)
+		{
+			<div class="wrong">Network Anomaly</div>
+		}
+		
+		@if ( chart is not null)
+		{
+		<h1>Leader board</h1>
+			<div class="entries">
+				@foreach ( var entry in chart.Entries )
+				{
+					<div class="entry @IsMe( entry )">
+						<div class="rank">@entry.Rank</div>
+						<div class="name">
+							<image texture=@AvatarTexture( entry )/>
+							<label>@entry.DisplayName</label>
+						</div>
+						<div class="value">@entry.FormattedValue</div>
+					</div>
+				}
+			</div>
+	
+		}
+	</div>
+	
+</root>
+
+@code
+{
+	
+	[Property] public GameManage GameManage{ get; set; }
+	
+	public Sandbox.Services.Leaderboards.Board chart;//排行榜
+
+	protected override void OnStart()
+	{
+		
+	}
+	protected override void OnUpdate()
+	{
+		chart = GameManage.chart;
+	}
+
+	string IsMe( Sandbox.Services.Leaderboards.Entry entry )
+	{
+		return entry.Me ? "me" : "";
+	}
+
+	string AvatarTexture( Sandbox.Services.Leaderboards.Entry entry )
+	{
+		return $"avatar:{entry.SteamId}";
+	}
+
+	
+	protected override int BuildHash() => System.HashCode.Combine(chart.Entries);
+	
+}

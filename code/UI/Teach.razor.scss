@@ -1,0 +1,33 @@
+Teach
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	justify-content: flex-start;
+	align-items: center;
+
+
+	.title
+	{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: 25px;
+		font-family: Poppins, serif;
+		color: #fff;
+		background-color: #ff527c;
+		margin-left: 100px;
+		border-radius: 30px;
+	}
+	
+	h1{
+		margin: 30px;
+		font-size: 40px;
+	}
+	h2{
+		margin: 20px;
+	}
+
+}

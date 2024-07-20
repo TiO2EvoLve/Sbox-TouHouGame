@@ -1,0 +1,103 @@
+ScoreBoard {
+	position: absolute;
+	top: 10%;
+	right: 1%;
+	height: 80%;
+	width: 28%;
+	font-family: Poppins, serif;
+	font-size:30px;
+}
+.box {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	//box-shadow: 0 25px 45px rgba(0, 0, 0, 1);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(10px);
+}
+.difficult {
+	width: 100%;
+	height:10%;
+	align-items:center;
+	justify-content:center;
+	font-size: 40px;
+	letter-spacing: 6px;
+	color: aquamarine;
+	text-shadow: 1px 1px 20px rgb(47, 255, 6);
+}
+.headbar {
+	width: 100%;
+	height: 8%;
+	letter-spacing: 6px;
+	margin-left: 1%;
+	align-items: center;
+	justify-content: center;
+}
+
+.text {
+	width: 30%;
+	font-size: 20px;
+	color: rgb(0, 254, 157);
+	text-shadow: 1px 1px 20px rgb(6, 252, 31);
+}
+
+.score {
+	width: 60%;
+	color: rgb(43, 235, 249);
+	text-shadow: 2px 2px 20px rgb(6, 223, 252);
+}
+
+.heart {
+	height: 50px;
+	width: 50px;
+	background-image: url(image/heart.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.star {
+	height: 50px;
+	width: 50px;
+	background-image: url(image/star.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.empty {
+	height: 50px;
+	width: 50px;
+}
+
+.power {
+	left: 40px;
+	height: 50px;
+	width: 50px;
+	background-image: url(sprite/Power.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.maxpoint {
+	left: 150px;
+	height: 50px;
+	width: 50px;
+	background-image: url(sprite/Score.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.logobar {
+	width: 80%;
+	height:20%;
+	background-image: url(image/logo.png);
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-size:contain;
+	margin:0 auto;
+}

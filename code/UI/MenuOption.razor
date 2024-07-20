@@ -1,0 +1,63 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<h1>Settings</h1>
+	<div class="settings">
+		
+		<div class="setting">
+			<label>Music Volume</label>
+			<SliderControl Value:bind="@GameSettings.Instance.MusicVolume" Min=@( 0 ) Max=@( 100 ) Step=@( 1f )/>
+		</div>
+		<div class="setting">
+			<label>Life</label>
+			<SliderControl Value:bind="@GameSettings.Instance.Life" Min=@( 0 ) Max=@( 8 ) Step=@( 1f )/>
+		</div>
+		
+		<div class="setting">
+        		<label>Bomb</label>
+        		<SliderControl Value:bind="@GameSettings.Instance.Bomb" Min=@( 0 ) Max=@( 8 ) Step=@( 1f )/></div>
+
+		<div class="setting">
+			<label>Auto Shoot</label>
+			<SwitchControl Value:bind="@GameSettings.Instance.AutoShoot"></SwitchControl>
+		</div>
+		
+		<div class="setting">
+        		<label>tip:</label>
+        		<h3>If Life and Bomb are not 2, you will not be able to earn points</h3>
+        	</div>
+
+
+		<div class="back" onclick=@back>Back</div>
+</div>
+
+</root>
+
+@code
+{
+	
+	public float num4 = 10;
+	public float num5 = 40;
+	public Component menu { get; set; }
+	[Property] public SoundEvent MenuSound;
+
+	protected override void OnStart()
+	{
+		menu = Components.Get<Menu>();
+		
+	}
+	void back()
+	{
+		PlaySound();
+		Enabled = false;
+		menu.Enabled = true;
+		GameSettings.Instance.Save();
+	}
+	
+	void PlaySound()
+	{
+		if ( MenuSound is not null ) Sound.Play( MenuSound );
+	}
+}

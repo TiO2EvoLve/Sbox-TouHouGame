@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZO9rtjv3AziWeDCAzKH3FMU2gBdL5G1U2XU7Bs56VRO6xb6D8C7nOy6HSw727bwWQkyqOLSjr3iU9UGJjcZcnQ==",
+  "success": true,
+  "projectFilePath": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\Code\\touhougame.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\32901\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.18\\microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\32901\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.18\\microsoft.windowsdesktop.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\32901\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}

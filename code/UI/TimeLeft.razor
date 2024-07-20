@@ -1,0 +1,35 @@
+@using System
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="time">@GetTimeLeftString()</div>
+</root>
+
+@code
+{
+	public TimeUntil RoundTime;
+	private float lastSoundPlayTime = 0f;
+	[Property] public SoundEvent TimeLeftSound;
+	private int Times =>RoundTime.Relative.CeilToInt();
+	protected override void OnUpdate()
+	{
+		if (RoundTime <= 10 && RoundTime >= 0 && Time.Now - lastSoundPlayTime >= 1f )
+		{
+			if (TimeLeftSound != null)
+			{
+				Sound.Play(TimeLeftSound);
+				lastSoundPlayTime = Time.Now;
+			}
+		}
+		
+	}
+	private string GetTimeLeftString()
+	{
+		var timeLeft = MathF.Max( Times, 0 );
+		var t = TimeSpan.FromSeconds( timeLeft );
+		return $"{t.Minutes}:{t.Seconds:D2}";
+	}
+	protected override int BuildHash() => System.HashCode.Combine( Times );
+}

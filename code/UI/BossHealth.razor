@@ -1,0 +1,14 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	 <div class="fill" style="width:@(bosshealth)%"></div>
+</root>
+
+@code
+{
+
+	[Property,Range(0,100)] public float bosshealth { get; set; } = 100f;
+	protected override int BuildHash() => System.HashCode.Combine( bosshealth );
+}

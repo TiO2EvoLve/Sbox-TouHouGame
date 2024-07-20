@@ -1,0 +1,16 @@
+{
+  "UI": false,
+  "Volume": "1.00,1.00,0",
+  "Pitch": "1.00,1.00,0",
+  "Decibels": 60,
+  "SelectionMode": "Random",
+  "Sounds": [
+    "sounds/bullet_fire.vsnd",
+    "sounds/bullet_fire2.vsnd",
+    "sounds/bullet_fire3.vsnd"
+  ],
+  "Occlusion": true,
+  "OcclusionRadius": 30,
+  "DistanceAttenuation": true,
+  "__references": []
+}

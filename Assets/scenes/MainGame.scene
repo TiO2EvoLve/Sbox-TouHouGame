@@ -1,0 +1,841 @@
+{
+  "__guid": "7d32e5b9-fc93-47b4-aaa9-161a228bbd05",
+  "GameObjects": [
+    {
+      "__guid": "e5dbf8fd-6a62-47fa-968d-f2bf669a5fb7",
+      "Flags": 0,
+      "Name": "GameManager",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "GameManage",
+          "__guid": "3a2d0b56-cd0e-4599-a9b8-2081801ba17c",
+          "boss": {
+            "_type": "gameobject",
+            "go": "663705d3-4d48-4647-8605-bcb31067a938"
+          },
+          "EndUI": {
+            "_type": "component",
+            "component_id": "ae020f00-26eb-463d-818f-2276db61121d",
+            "go": "44bb02c7-41ce-445e-a99c-fe0657cb1ecc",
+            "component_type": "Dead"
+          },
+          "enemy": {
+            "_type": "gameobject",
+            "prefab": "prefab/enemy.prefab"
+          },
+          "GameMusic": "sounds/touhoumusic.sound",
+          "Leave1Time": 60,
+          "Leave2Time": 60,
+          "Leave3Time": 240,
+          "TimeLeftUI": {
+            "_type": "gameobject",
+            "go": "bb2143ce-051a-46d8-82fd-b34c099aba34"
+          },
+          "TouhouPlayer": {
+            "_type": "component",
+            "component_id": "85cb69ec-de12-4bc5-8e68-958f8684f443",
+            "go": "da880084-7123-4888-805b-960ffc6e8862",
+            "component_type": "TouhouPlayer"
+          },
+          "trackenemy": {
+            "_type": "gameobject",
+            "go": "51bc7d49-31f9-402b-b290-39bdf945d815"
+          }
+        }
+      ]
+    },
+    {
+      "__guid": "6ad70641-3c6c-4402-9c85-9a4969af4764",
+      "Flags": 0,
+      "Name": "Background",
+      "Position": "0,0,-1",
+      "Rotation": "0,-0,-0.707107,0.7071065",
+      "Scale": "1,1.25,1",
+      "Tags": "solid",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "a0fb98fe-ae05-4fcb-b5cf-0376ae2252a7",
+          "BodyGroups": 18446744073709551615,
+          "MaterialOverride": "materials/dev/black_nonsolid.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "4e3b1759-52da-4866-b71f-2cdd0263d5b9",
+          "Flags": 0,
+          "Name": "left",
+          "Position": "-64,-0.0001071569,-7.01915",
+          "Tags": "not",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "f3a30aaa-2ba0-4e02-b9d9-cdb8f646d656",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "30,200,50",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "34ed8a33-034e-42cc-989c-afd7dd3e7c40",
+          "Flags": 0,
+          "Name": "right",
+          "Position": "64,0.00006122748,-7.01915",
+          "Tags": "not",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "6aee8f8b-eca7-4739-bbda-c47adfd0fd6c",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "30,200,50",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "4fca0b46-928b-41e6-a584-df7bd1c2f5ca",
+          "Flags": 0,
+          "Name": "top",
+          "Position": "-0.00008952728,64,-7.01915",
+          "Tags": "y",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "c61f91ff-261b-40d9-871c-be28eb701ecb",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "200,30,50",
+              "Static": true
+            }
+          ]
+        },
+        {
+          "__guid": "59295a44-025c-422b-8bb9-edfc494cfb98",
+          "Flags": 0,
+          "Name": "buttom",
+          "Position": "0.0002082175,-73,-7.01915",
+          "Tags": "y",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "2761822e-4844-4c05-a3ed-b592ce12ea49",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "200,50,50",
+              "Static": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "c5c62271-c9f5-42d5-be95-1073c890a25b",
+      "Flags": 0,
+      "Name": "UI",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Children": [
+        {
+          "__guid": "1db3c623-79b0-4271-bdcd-8fc2267449ef",
+          "Flags": 0,
+          "Name": "ScoreBoard",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ScreenPanel",
+              "__guid": "b5afd265-ce51-45d4-a15b-d1a54043f2e3",
+              "AutoScreenScale": true,
+              "Opacity": 1,
+              "Scale": 1,
+              "ZIndex": 100
+            },
+            {
+              "__type": "ScoreBoard",
+              "__guid": "7c796db2-f3be-4718-8e6e-e1fc15a3ca32",
+              "GameManage": {
+                "_type": "component",
+                "component_id": "3a2d0b56-cd0e-4599-a9b8-2081801ba17c",
+                "go": "e5dbf8fd-6a62-47fa-968d-f2bf669a5fb7",
+                "component_type": "GameManage"
+              },
+              "touhouPlayer": {
+                "_type": "component",
+                "component_id": "85cb69ec-de12-4bc5-8e68-958f8684f443",
+                "go": "da880084-7123-4888-805b-960ffc6e8862",
+                "component_type": "TouhouPlayer"
+              }
+            }
+          ]
+        },
+        {
+          "__guid": "286562c5-9ae4-4bad-b908-8673689332fe",
+          "Flags": 0,
+          "Name": "Chart",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ScreenPanel",
+              "__guid": "becd9e33-bdee-4da6-b0ae-151db6eaead8",
+              "AutoScreenScale": true,
+              "Opacity": 1,
+              "Scale": 1,
+              "ZIndex": 100
+            },
+            {
+              "__type": "Chart",
+              "__guid": "8dae4c96-f16b-4917-9a57-5b4bd2185121",
+              "GameManage": {
+                "_type": "component",
+                "component_id": "3a2d0b56-cd0e-4599-a9b8-2081801ba17c",
+                "go": "e5dbf8fd-6a62-47fa-968d-f2bf669a5fb7",
+                "component_type": "GameManage"
+              }
+            }
+          ]
+        },
+        {
+          "__guid": "44bb02c7-41ce-445e-a99c-fe0657cb1ecc",
+          "Flags": 0,
+          "Name": "Dead",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ScreenPanel",
+              "__guid": "6d945757-3cb1-4817-b26b-cb3041a4c63f",
+              "AutoScreenScale": true,
+              "Opacity": 1,
+              "Scale": 1,
+              "ZIndex": 1000
+            },
+            {
+              "__type": "Dead",
+              "__guid": "ae020f00-26eb-463d-818f-2276db61121d",
+              "GameManage": {
+                "_type": "component",
+                "component_id": "3a2d0b56-cd0e-4599-a9b8-2081801ba17c",
+                "go": "e5dbf8fd-6a62-47fa-968d-f2bf669a5fb7",
+                "component_type": "GameManage"
+              },
+              "ScoreBoard": {
+                "_type": "component",
+                "component_id": "7c796db2-f3be-4718-8e6e-e1fc15a3ca32",
+                "go": "1db3c623-79b0-4271-bdcd-8fc2267449ef",
+                "component_type": "ScoreBoard"
+              }
+            }
+          ]
+        },
+        {
+          "__guid": "476cc632-07b7-46a7-96ac-2754027e8a98",
+          "Flags": 0,
+          "Name": "to be continued",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ScreenPanel",
+              "__guid": "c4f9b171-5713-479a-b146-b60a637ec210",
+              "AutoScreenScale": true,
+              "Opacity": 1,
+              "Scale": 1,
+              "ZIndex": 100
+            },
+            {
+              "__type": "Developer",
+              "__guid": "d1a2d7b4-2d2b-4ad8-8e76-6225dfbd4001"
+            }
+          ]
+        },
+        {
+          "__guid": "08a902d2-e7d0-4cba-add7-722efbb7e042",
+          "Flags": 0,
+          "Name": "Boss Health",
+          "Position": "65.45322,0,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.WorldPanel",
+              "__guid": "3ab11661-40d3-42c4-8984-412cf5b48478",
+              "HorizontalAlign": "Center",
+              "InteractionRange": 1000,
+              "LookAtCamera": true,
+              "PanelSize": "2000,70",
+              "RenderScale": 1,
+              "VerticalAlign": "Center"
+            },
+            {
+              "__type": "BossHealth",
+              "__guid": "156888b8-167c-4fe9-bd2c-6156df32f342",
+              "__enabled": false,
+              "bosshealth": 100
+            }
+          ]
+        },
+        {
+          "__guid": "bb2143ce-051a-46d8-82fd-b34c099aba34",
+          "Flags": 0,
+          "Name": "Time",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ScreenPanel",
+              "__guid": "348e7e0b-1d13-4ddf-96da-12a9a4b74f3a",
+              "AutoScreenScale": true,
+              "Opacity": 1,
+              "Scale": 1,
+              "ZIndex": 1000
+            },
+            {
+              "__type": "TimeLeft",
+              "__guid": "2c2549a2-95ec-4e23-9de7-1875346dc5d9",
+              "TimeLeftSound": "sounds/timeleft.sound"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "da880084-7123-4888-805b-960ffc6e8862",
+      "Flags": 0,
+      "Name": "Player",
+      "Position": "-50,0,1",
+      "Tags": "player",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "TouhouPlayer",
+          "__guid": "85cb69ec-de12-4bc5-8e68-958f8684f443",
+          "Biu": "sounds/biu.sound",
+          "bullet": {
+            "_type": "gameobject",
+            "prefab": "prefab/playerbullet.prefab"
+          },
+          "EndUI": {
+            "_type": "component",
+            "component_id": "ae020f00-26eb-463d-818f-2276db61121d",
+            "go": "44bb02c7-41ce-445e-a99c-fe0657cb1ecc",
+            "component_type": "Dead"
+          },
+          "GameManage": {
+            "_type": "component",
+            "component_id": "3a2d0b56-cd0e-4599-a9b8-2081801ba17c",
+            "go": "e5dbf8fd-6a62-47fa-968d-f2bf669a5fb7",
+            "component_type": "GameManage"
+          },
+          "Graze": 0,
+          "GrazeSound": "sounds/graze.sound",
+          "health": 2,
+          "lerpSpeed": 0.5,
+          "lowSpeed": 2.5,
+          "MaxPoint": 0,
+          "moveSpeed": 5,
+          "point": {
+            "_type": "gameobject",
+            "go": "f10a86dd-4a98-4e29-9574-b7a3d8cf1f64"
+          },
+          "Power": 0,
+          "Score": 0,
+          "spawnInterval": 0.1,
+          "spellcard": 2,
+          "SpellCardSound": "sounds/spellcard.sound"
+        },
+        {
+          "__type": "Sandbox.SphereCollider",
+          "__guid": "97e7622b-b972-43f3-928e-de201ff3c341",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Radius": 1,
+          "Static": false
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "380fedab-6bc5-442f-8d13-0deeda3b324f",
+          "AngularDamping": 0,
+          "Gravity": false,
+          "LinearDamping": 0,
+          "Locking": {
+            "Z": true
+          },
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "RigidbodyFlags": "DisableCollisionSounds",
+          "StartAsleep": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "9efc64c7-1ab1-45df-a810-181f5ee8358c",
+          "Flags": 0,
+          "Name": "body",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SpriteRenderer",
+              "__guid": "5ab1cd19-b7a2-40bf-8b98-93c16dd77c30",
+              "Additive": false,
+              "CastShadows": true,
+              "Color": "1,1,1,1",
+              "DepthFeather": 0,
+              "FlipHorizontal": false,
+              "FlipVertical": false,
+              "FogStrength": 1,
+              "Opaque": true,
+              "Size": "13,13",
+              "Texture": "materials/decals/terry2_png_a9b4b33c.generated.vtex"
+            }
+          ]
+        },
+        {
+          "__guid": "f10a86dd-4a98-4e29-9574-b7a3d8cf1f64",
+          "Flags": 0,
+          "Name": "decision point",
+          "Position": "0,0,4.776436",
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SpriteRenderer",
+              "__guid": "f228ab9e-b626-463d-b84b-5ee0581702eb",
+              "Additive": false,
+              "CastShadows": false,
+              "Color": "1,1,1,1",
+              "DepthFeather": 0,
+              "FlipHorizontal": false,
+              "FlipVertical": false,
+              "FogStrength": 1,
+              "Opaque": false,
+              "Size": "10,10",
+              "Texture": "sprite/decision_point.vtex"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "51bc7d49-31f9-402b-b290-39bdf945d815",
+      "Flags": 0,
+      "Name": "enemytrack",
+      "Position": "40.93709,-0.00001904349,1",
+      "Rotation": "0.5000001,0.4999998,-0.5000001,0.4999998",
+      "Tags": "boss",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "EnemyTrack",
+          "__guid": "f340d24c-1949-414f-a333-eca366d5a6ad",
+          "BossHealth": {
+            "_type": "component",
+            "component_id": "156888b8-167c-4fe9-bd2c-6156df32f342",
+            "go": "08a902d2-e7d0-4cba-add7-722efbb7e042",
+            "component_type": "BossHealth"
+          },
+          "bullet": {
+            "_type": "gameobject",
+            "prefab": "prefab/trackbullet.prefab"
+          },
+          "bullet2": {
+            "_type": "gameobject",
+            "prefab": "prefab/bullet.prefab"
+          },
+          "bullet3": {
+            "_type": "gameobject",
+            "prefab": "prefab/jumpbullet.prefab"
+          },
+          "bulletSound": "sounds/bullet_fire.sound",
+          "DeadSound": "sounds/bossdead.sound",
+          "Health": 100
+        },
+        {
+          "__type": "Sandbox.SphereCollider",
+          "__guid": "aa645b52-ddf3-4470-a370-34ddba68dbc4",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Radius": 6,
+          "Static": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "737a227f-2e2b-41be-bf8f-b7379d380650",
+          "Flags": 0,
+          "Name": "Sprite",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SpriteRenderer",
+              "__guid": "9a98c42a-1a34-4712-beec-c1465065ecdb",
+              "Additive": false,
+              "CastShadows": true,
+              "Color": "1,1,1,1",
+              "DepthFeather": 0,
+              "FlipHorizontal": false,
+              "FlipVertical": false,
+              "FogStrength": 1,
+              "Opaque": true,
+              "Size": "10,10",
+              "Texture": "materials/decals/default_png_4cda46a2.generated.vtex"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "50f38b44-0597-44f5-96d5-31b199751e38",
+      "Flags": 0,
+      "Name": "Environment",
+      "Position": "121.3311,26.31056,-98.1631",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Children": [
+        {
+          "__guid": "724a51ab-8827-4113-9f7e-03451b8abbeb",
+          "Flags": 0,
+          "Name": "Cubemap",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.EnvmapProbe",
+              "__guid": "94d5c3ad-c116-40a5-ad53-00802386de02",
+              "Texture": "textures/cubemaps/default2.vtex",
+              "Bounds": {
+                "Mins": "-200,-200,-100",
+                "Maxs": "200,200,100"
+              },
+              "DelayBetweenUpdates": 0.1,
+              "Feathering": 0.02,
+              "FrameInterval": 5,
+              "MaxDistance": 512,
+              "Projection": "Box",
+              "RenderDynamically": false,
+              "TintColor": "1,1,1,1",
+              "UpdateStrategy": "OnEnabled",
+              "ZFar": 4096,
+              "ZNear": 16
+            }
+          ]
+        },
+        {
+          "__guid": "bbeaebae-840c-4e62-966e-1c36db37fb16",
+          "Flags": 0,
+          "Name": "Sun",
+          "Position": "-110.2093,-28.43058,191.3502",
+          "Rotation": "-0.0000000000005684342,0.7071065,-0.0000000000005684342,0.707107",
+          "Tags": "light_directional,light",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.DirectionalLight",
+              "__guid": "451a1366-9c23-4e3c-b2a3-43d6df279735",
+              "FogMode": "Enabled",
+              "FogStrength": 1,
+              "LightColor": "0.91373,0.98039,1,1",
+              "Shadows": true,
+              "SkyColor": "0.05882,0.07451,0.08235,1"
+            }
+          ]
+        },
+        {
+          "__guid": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
+          "Flags": 0,
+          "Name": "Camera",
+          "Position": "-121.3311,-26.31055,320.3959",
+          "Rotation": "0,0.707107,0,0.7071065",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.CameraComponent",
+              "__guid": "6c167965-db09-4bbd-b4e9-96bf16fc5b8c",
+              "BackgroundColor": "0.31163,0.66729,1,1",
+              "ClearFlags": "All",
+              "FieldOfView": 60,
+              "IsMainCamera": true,
+              "Orthographic": true,
+              "OrthographicHeight": 150,
+              "Priority": 1,
+              "RenderExcludeTags": "",
+              "RenderTags": "",
+              "TargetEye": "None",
+              "Viewport": "0,0,1,1",
+              "ZFar": 10000,
+              "ZNear": 10
+            },
+            {
+              "__type": "Sandbox.Bloom",
+              "__guid": "cd6b2b53-b783-4c91-94c4-a63f6c077b32",
+              "BloomColor": {
+                "color": [
+                  {
+                    "c": "1,1,1,1"
+                  },
+                  {
+                    "t": 1,
+                    "c": "1,1,1,1"
+                  }
+                ],
+                "alpha": []
+              },
+              "BloomCurve": [
+                {
+                  "y": 0.5
+                },
+                {
+                  "x": 1,
+                  "y": 1
+                }
+              ],
+              "Mode": "Additive",
+              "Strength": 0.2,
+              "Threshold": 0.5,
+              "ThresholdWidth": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "164b7aed-09b0-4083-9dfb-ce8012bbf6bc",
+      "Flags": 0,
+      "Name": "pickupitem",
+      "Rotation": "-0.4999998,0.5000001,0.4999998,0.5000001",
+      "Tags": "pickup",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "__Prefab": "prefab/pickupitem.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "389a70be-92d8-433e-a9f5-8d609086ccce",
+      "Flags": 0,
+      "Name": "Effect",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Children": [
+        {
+          "__guid": "4a930f46-8b10-4f78-9d33-62e554f17e82",
+          "Flags": 0,
+          "Name": "paric",
+          "Position": "0,0,-300",
+          "Tags": "light_point,light",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "LineRender",
+              "__guid": "7d4713f8-cde1-4187-b95d-aceed4d3ec3b",
+              "Color": {
+                "color": [
+                  {
+                    "c": "1,0,0,1"
+                  },
+                  {
+                    "t": 0.16452992,
+                    "c": "1,0.56667,0,1"
+                  },
+                  {
+                    "t": 0.33119658,
+                    "c": "0.83333,1,0,1"
+                  },
+                  {
+                    "t": 0.49358973,
+                    "c": "0,1,0.15,1"
+                  },
+                  {
+                    "t": 0.64102566,
+                    "c": "0,0.88333,1,1"
+                  },
+                  {
+                    "t": 0.8226496,
+                    "c": "0,0.26667,1,1"
+                  },
+                  {
+                    "t": 1,
+                    "c": "0.55,0,1,1"
+                  }
+                ],
+                "alpha": []
+              },
+              "EndCap": "Rounded",
+              "Jubble": true,
+              "Noising": 5,
+              "Octaves": 0,
+              "Opaque": true,
+              "Points": [],
+              "Smoothness": 64,
+              "Speed": 1,
+              "StartCap": "Rounded",
+              "Width": [
+                {
+                  "y": 1
+                },
+                {
+                  "x": 0.5,
+                  "y": 1
+                },
+                {
+                  "x": 1,
+                  "y": 1
+                }
+              ],
+              "Wireframe": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "663705d3-4d48-4647-8605-bcb31067a938",
+      "Flags": 0,
+      "Name": "uuz",
+      "Position": "156.0018,0,1",
+      "Tags": "boss",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SpriteRenderer",
+          "__guid": "8b5cdf00-214d-4fda-b874-f85aa3203a42",
+          "Additive": false,
+          "CastShadows": false,
+          "Color": "1,1,1,1",
+          "DepthFeather": 0,
+          "FlipHorizontal": false,
+          "FlipVertical": false,
+          "FogStrength": 1,
+          "Opaque": false,
+          "Size": "30,30",
+          "Texture": "sprite/uuz.vtex"
+        },
+        {
+          "__type": "Boss",
+          "__guid": "02028d9f-93d2-4636-8f3b-84cf1f9762c8",
+          "BossHealth": {
+            "_type": "component",
+            "component_id": "156888b8-167c-4fe9-bd2c-6156df32f342",
+            "go": "08a902d2-e7d0-4cba-add7-722efbb7e042",
+            "component_type": "BossHealth"
+          },
+          "Bullet": {
+            "_type": "gameobject",
+            "prefab": "prefab/rotationbullet.prefab"
+          },
+          "Bullet2": {
+            "_type": "gameobject",
+            "prefab": "prefab/scalebullet.prefab"
+          },
+          "Bullet3": {
+            "_type": "gameobject",
+            "prefab": "prefab/accelerationbullet.prefab"
+          },
+          "Bullet4": {
+            "_type": "gameobject",
+            "prefab": "prefab/moonbullet.prefab"
+          },
+          "BulletSound": "sounds/bullet_fire3.sound",
+          "DeadSound": "sounds/bossdead.sound",
+          "Health": 100
+        },
+        {
+          "__type": "Sandbox.SphereCollider",
+          "__guid": "024dab0c-0d03-4561-9814-3f845583572c",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Radius": 5,
+          "Static": false
+        }
+      ]
+    },
+    {
+      "__guid": "d9473128-7234-4a44-b889-01d722464e49",
+      "Flags": 0,
+      "Name": "World",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 60,
+    "NetworkInterpolation": true,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "minimal",
+  "Description": "",
+  "LastSaved": "2024-06-20T09:27:33.6804316\u002B08:00",
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

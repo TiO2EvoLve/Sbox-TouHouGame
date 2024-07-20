@@ -18,14 +18,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b13bf978-a1af-4a3b-9c78-46005e0dfce1" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.touhougame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.touhougame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scenes/MainGame.scene" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scenes/MainGame.scene" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scenes/Menu.scene" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scenes/Menu.scene" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Player/TouhouPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/Player/TouhouPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/UI/Menu.razor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/code/UI/Menu.razor.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/UI/MenuDifficult.razor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/code/UI/MenuDifficult.razor.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/UI/MenuOption.razor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/code/UI/MenuOption.razor.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/UI/ScoreBoard.razor" beforeDir="false" afterPath="$PROJECT_DIR$/code/UI/ScoreBoard.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sbproj" beforeDir="false" afterPath="$PROJECT_DIR$/.sbproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/UI/Developer.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/UI/Developer.razor.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/obj/Debug/touhougame.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/code/obj/Debug/touhougame.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/obj/Debug/touhougame.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/code/obj/Debug/touhougame.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/obj/Debug/touhougame.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/code/obj/Debug/touhougame.csproj.AssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -350,6 +348,7 @@
       <workItem from="1710831755600" duration="786000" />
       <workItem from="1718846411653" duration="669000" />
       <workItem from="1718847242712" duration="377000" />
+      <workItem from="1721451366819" duration="19000" />
     </task>
     <servers />
   </component>

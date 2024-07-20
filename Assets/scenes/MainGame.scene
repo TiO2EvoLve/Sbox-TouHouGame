@@ -6,8 +6,6 @@
       "Flags": 0,
       "Name": "GameManager",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "GameManage",
@@ -56,8 +54,6 @@
       "Scale": "1,1.25,1",
       "Tags": "solid",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.ModelRenderer",
@@ -77,8 +73,6 @@
           "Position": "-64,-0.0001071569,-7.01915",
           "Tags": "not",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.BoxCollider",
@@ -97,8 +91,6 @@
           "Position": "64,0.00006122748,-7.01915",
           "Tags": "not",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.BoxCollider",
@@ -117,8 +109,6 @@
           "Position": "-0.00008952728,64,-7.01915",
           "Tags": "y",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.BoxCollider",
@@ -137,8 +127,6 @@
           "Position": "0.0002082175,-73,-7.01915",
           "Tags": "y",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.BoxCollider",
@@ -157,16 +145,12 @@
       "Flags": 0,
       "Name": "UI",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Children": [
         {
           "__guid": "1db3c623-79b0-4271-bdcd-8fc2267449ef",
           "Flags": 0,
           "Name": "ScoreBoard",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ScreenPanel",
@@ -199,8 +183,6 @@
           "Flags": 0,
           "Name": "Chart",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ScreenPanel",
@@ -227,8 +209,6 @@
           "Flags": 0,
           "Name": "Dead",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ScreenPanel",
@@ -257,35 +237,11 @@
           ]
         },
         {
-          "__guid": "476cc632-07b7-46a7-96ac-2754027e8a98",
-          "Flags": 0,
-          "Name": "to be continued",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ScreenPanel",
-              "__guid": "c4f9b171-5713-479a-b146-b60a637ec210",
-              "AutoScreenScale": true,
-              "Opacity": 1,
-              "Scale": 1,
-              "ZIndex": 100
-            },
-            {
-              "__type": "Developer",
-              "__guid": "d1a2d7b4-2d2b-4ad8-8e76-6225dfbd4001"
-            }
-          ]
-        },
-        {
           "__guid": "08a902d2-e7d0-4cba-add7-722efbb7e042",
           "Flags": 0,
           "Name": "Boss Health",
           "Position": "65.45322,0,0",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.WorldPanel",
@@ -310,8 +266,6 @@
           "Flags": 0,
           "Name": "Time",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ScreenPanel",
@@ -337,8 +291,6 @@
       "Position": "-50,0,1",
       "Tags": "player",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "TouhouPlayer",
@@ -372,7 +324,6 @@
             "go": "f10a86dd-4a98-4e29-9574-b7a3d8cf1f64"
           },
           "Power": 0,
-          "Score": 0,
           "spawnInterval": 0.1,
           "spellcard": 2,
           "SpellCardSound": "sounds/spellcard.sound"
@@ -407,8 +358,6 @@
           "Name": "body",
           "Position": "0,0,0",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.SpriteRenderer",
@@ -431,8 +380,6 @@
           "Flags": 0,
           "Name": "decision point",
           "Position": "0,0,4.776436",
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.SpriteRenderer",
@@ -460,8 +407,6 @@
       "Rotation": "0.5000001,0.4999998,-0.5000001,0.4999998",
       "Tags": "boss",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "EnemyTrack",
@@ -504,8 +449,6 @@
           "Name": "Sprite",
           "Position": "0,0,0",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.SpriteRenderer",
@@ -531,8 +474,6 @@
       "Name": "Environment",
       "Position": "121.3311,26.31056,-98.1631",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Children": [
         {
           "__guid": "724a51ab-8827-4113-9f7e-03451b8abbeb",
@@ -540,8 +481,6 @@
           "Name": "Cubemap",
           "Position": "0,0,0",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.EnvmapProbe",
@@ -572,8 +511,6 @@
           "Rotation": "-0.0000000000005684342,0.7071065,-0.0000000000005684342,0.707107",
           "Tags": "light_directional,light",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.DirectionalLight",
@@ -593,8 +530,6 @@
           "Position": "-121.3311,-26.31055,320.3959",
           "Rotation": "0,0.707107,0,0.7071065",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.CameraComponent",
@@ -653,8 +588,6 @@
       "Rotation": "-0.4999998,0.5000001,0.4999998,0.5000001",
       "Tags": "pickup",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "__Prefab": "prefab/pickupitem.prefab",
       "__PrefabVariables": {}
     },
@@ -663,8 +596,6 @@
       "Flags": 0,
       "Name": "Effect",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Children": [
         {
           "__guid": "4a930f46-8b10-4f78-9d33-62e554f17e82",
@@ -673,8 +604,6 @@
           "Position": "0,0,-300",
           "Tags": "light_point,light",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "LineRender",
@@ -746,8 +675,6 @@
       "Position": "156.0018,0,1",
       "Tags": "boss",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.SpriteRenderer",
@@ -806,9 +733,7 @@
       "__guid": "d9473128-7234-4a44-b889-01d722464e49",
       "Flags": 0,
       "Name": "World",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true
+      "Enabled": true
     }
   ],
   "SceneProperties": {
@@ -834,7 +759,6 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-06-20T09:27:33.6804316\u002B08:00",
   "ResourceVersion": 1,
   "__references": [],
   "__version": 1

@@ -60,6 +60,7 @@ public class GameManage : Component
 		}
 		if ( GameTime >= Leave1Time + Leave2Time && enemyTrack.Health > 0 )
 		{
+
 			enemyTrack.Health = 0;
 		}
 		if ( GameTime >= Leave1Time + Leave2Time + Leave3Time ||Boss.Health <=0)
@@ -105,6 +106,7 @@ public class GameManage : Component
 			Sandbox.Services.Stats.SetValue( "maxscore", score );
 			Scene.TimeScale = 0f;
 			Sound.StopAll( 5 );
+			Sandbox.Services.Achievements.Unlock( "finishgame" );
 		}
 	}
 	//重置游戏
@@ -162,7 +164,7 @@ public class GameManage : Component
 		if ( isTimeOne2 )
 		{
 			isTimeOne2 = false;
-			boss.Transform.Position = new Vector3( 40, 0, 1 );
+			boss.WorldPosition = new Vector3( 40, 0, 1 );
 			timeLeft.RoundTime = Leave3Time;
 			DestroyAll();
 		}
@@ -171,21 +173,21 @@ public class GameManage : Component
 	
 	void DestroyAll()
 	{
-		var gameObjects = Scene.GetAllObjects( true ).Where( obj => obj.Tags.Has( "bullet" ) );
-		if ( !gameObjects.Any() ) return;
-		var objects = gameObjects.ToList();
-		foreach ( var o in objects )
-		{
-			o.Destroy();
-		}
+		//var gameObjects = Scene.GetAllObjects( true ).Where( obj => obj.Tags.Has( "bullet" ) );
+		//if ( !gameObjects.Any() ) return;
+		//var objects = gameObjects.ToList();
+		//foreach ( var o in objects )
+		//{
+		//	o.Destroy();
+		//}
 
-		var gameObjects2 = Scene.GetAllObjects( true ).Where( obj => obj.Tags.Has( "enemy" ) );
-		if ( !gameObjects2.Any() ) return;
-		var objects2 = gameObjects2.ToList();
-		foreach ( var o in objects2 )
-		{
-			o.Destroy();
-		}
+		//var gameObjects2 = Scene.GetAllObjects( true ).Where( obj => obj.Tags.Has( "clean" ) );
+		//if ( !gameObjects2.Any() ) return;
+		//var objects2 = gameObjects2.ToList();
+		//foreach ( var o in objects2 )
+		//{
+		//	o.Destroy();
+		//}
 	}
 
 	void PlayMusic()

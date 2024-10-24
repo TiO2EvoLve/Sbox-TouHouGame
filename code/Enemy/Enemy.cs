@@ -15,7 +15,6 @@ public sealed class Enemy : Component,Component.ITriggerListener
 	[Property] public SoundEvent FireSound { get; set; }
 	private EnemyHealthBar enemyHealthBar;
 
-	[Property] public PickUpItem PickUpItem{ get; set; }
 	
 	public int numberOfBullets = (int)(12 * DifficultyRatio.GetDifficultRatio());  // 子弹数量
 	public float circleRadius = 5f ;  // 子弹生成的圆的半径

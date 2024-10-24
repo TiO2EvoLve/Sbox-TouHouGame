@@ -18,17 +18,15 @@ public sealed class TouhouPlayer : Component, Component.ITriggerListener
 	[Property, Range( 0, 8 )] public int spellcard { get; set; } = 2; //符卡
 	 public int Score { get; private set; } //得分
 	[Property, Range( 0, 4,0.1f )] public float Power { get; set; } //火力值
-	[Property] public int Graze { get; set; } //擦弹数
+	
 	[Property] public int MaxPoint { get; set; } //得点
-
-	[Property, Range( 0, 20 )] public float moveSpeed { get; set; } = 5f; //移动速度
+	public float speed { get; set; }//速度
+	[Property, Range( 0, 20 )] public float moveSpeed { get; set; } = 5f; //正常移动速度
 	[Property, Range( 0, 10 )] public float lowSpeed { get; set; } = 2.5f; //慢速移动
 	[Property] public float lerpSpeed { get; set; } = 0.5f; //平滑时间
 	[Property] public SoundEvent BulletSound { get; set; } //子弹发射声音
 	[Property] public SoundEvent Biu { get; set; } //自机被击中音效
 	[Property] public SoundEvent SpellCardSound { get; set; } //释放bomb音效
-	[Property] public SoundEvent GrazeSound { get; set; } //擦弹音效音效
-
 	private TimeSince TimeScore = 0;//时间分
 
 	protected override void OnStart()
@@ -40,7 +38,7 @@ public sealed class TouhouPlayer : Component, Component.ITriggerListener
 	protected override void OnFixedUpdate()
 	{
 		//计算得分
-		Score = (int)((TimeScore * 1000 + MaxPoint * 100000 + Graze * 50000) * DifficultyRatio.GetScoreRatio());
+		Score = (int)((TimeScore * 1000 + MaxPoint * 100000) * DifficultyRatio.GetScoreRatio());
 		
 		if ( GameSettings.Instance.Bomb != 2 || GameSettings.Instance.Life != 2 ) Score = 0;
 		//如果生命为0
@@ -67,24 +65,24 @@ public sealed class TouhouPlayer : Component, Component.ITriggerListener
 		    || (GameSettings.Instance.AutoShoot&& Time.Now - lastSpawnTime > spawnInterval) )
 		{
 			lastSpawnTime = Time.Now; // 更新上一次生成的时间
-			if ( Power >= 0 && Power < 1 ) { bullet.Clone( Transform.Position + Vector3.Forward * 10 ); }
+			if ( Power >= 0 && Power < 1 ) { bullet.Clone( WorldPosition + Vector3.Forward * 10 ); }
 			else if ( Power >= 1 && Power < 2 )
 			{
-				bullet.Clone( Transform.Position + Vector3.Left * 3 + Vector3.Forward * 10 );
-				bullet.Clone( Transform.Position + Vector3.Right * 3 + Vector3.Forward * 10 );
+				bullet.Clone( WorldPosition + Vector3.Left * 3 + Vector3.Forward * 10 );
+				bullet.Clone( WorldPosition + Vector3.Right * 3 + Vector3.Forward * 10 );
 			}
 			else if ( Power >= 2 && Power < 3 )
 			{
-				bullet.Clone( Transform.Position + Vector3.Forward * 10 );
-				bullet.Clone( Transform.Position + Vector3.Left * 5 + Vector3.Forward * 10 );
-				bullet.Clone( Transform.Position + Vector3.Right * 5 + Vector3.Forward * 10 );
+				bullet.Clone( WorldPosition + Vector3.Forward * 10 );
+				bullet.Clone( WorldPosition + Vector3.Left * 5 + Vector3.Forward * 10 );
+				bullet.Clone( WorldPosition + Vector3.Right * 5 + Vector3.Forward * 10 );
 			}
 			else if ( Power >= 3 )
 			{
-				bullet.Clone( Transform.Position + Vector3.Left * 2 + Vector3.Forward * 10 );
-				bullet.Clone( Transform.Position + Vector3.Right * 2 + Vector3.Forward * 10 );
-				bullet.Clone( Transform.Position + Vector3.Left * 6 + Vector3.Forward * 10 );
-				bullet.Clone( Transform.Position + Vector3.Right * 6 + Vector3.Forward * 10 );
+				bullet.Clone( WorldPosition + Vector3.Left * 2 + Vector3.Forward * 10 );
+				bullet.Clone( WorldPosition + Vector3.Right * 2 + Vector3.Forward * 10 );
+				bullet.Clone( WorldPosition + Vector3.Left * 6 + Vector3.Forward * 10 );
+				bullet.Clone( WorldPosition + Vector3.Right * 6 + Vector3.Forward * 10 );
 			}
 			if ( BulletSound is not null ) Sound.Play( BulletSound );
 		}
@@ -94,45 +92,41 @@ public sealed class TouhouPlayer : Component, Component.ITriggerListener
 	//根据玩家输入进行移动
 	void Move()
 	{
-		//获取玩家输入
-		Vector3 movedirection = Input.AnalogMove;
-		//目标位置
-		Vector3 targetPosition;
-
-		//如果按下Mouse3速度设为low speed
+		// 如果按下Mouse3速度设为low speed
 		if ( Input.Down( "Run" ) )
 		{
 			point.Enabled = true;
-			targetPosition = Transform.Position + (movedirection * lowSpeed * 20);
+			speed = lowSpeed;
 		}
 		else
 		{
 			point.Enabled = false;
-			targetPosition = Transform.Position + (movedirection * moveSpeed * 20);
+			speed = moveSpeed;
 		}
-		
-		//使用lerp平滑移动
-		Transform.Position = Vector3.Lerp( Transform.Position, targetPosition, lerpSpeed * Time.Delta );
-	
+		// 获取玩家输入
+		Vector3 movedirection = Input.AnalogMove;
+		// 移动
+		WorldPosition += movedirection * speed * Time.Delta *10;
+		// 限制移动范围
+		WorldPosition = new Vector3( WorldPosition.x.Clamp( -58, 58 ), WorldPosition.y.Clamp( -46, 46 ), 0 );
+		// 平滑移动
+
+
+
+
 	}
-	
+
 	//和子弹发生碰撞
 	public void OnTriggerEnter( Collider other )
 	{
 		GameTags tag = other.GameObject.Tags;
 		
-		if ( tag.Has( "graze" ) )
-		{
-			if ( GrazeSound is not null ) Sound.Play( GrazeSound );
-			Graze++;
-		}
-
-		if ( tag.Has( "bullet" ) && !tag.Has( "graze" ) )
+		if ( tag.Has( "bullet" ) )
 		{
 			DestroyAll();
 			health -= 1;
 			if ( Biu is not null ) Sound.Play( Biu );
-			Transform.Position = new Vector3( -50, 0, 0 );
+			WorldPosition = new Vector3( -50, 0, 0 );
 		}
 		if ( tag.Has( "pickup" ) )
 		{
@@ -169,7 +163,7 @@ public sealed class TouhouPlayer : Component, Component.ITriggerListener
 			o.Destroy();
 		}
 
-		var gameObjects2 = Scene.GetAllObjects( true ).Where( obj => obj.Tags.Has( "enemy" ) );
+		var gameObjects2 = Scene.GetAllObjects( true ).Where( obj => obj.Tags.Has( "clean" ) );
 		if ( !gameObjects2.Any() ) return;
 		var objects2 = gameObjects2.ToList();
 		foreach ( var o in objects2 )

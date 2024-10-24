@@ -76,7 +76,7 @@ public sealed class EnemyTrack : Component, Component.ITriggerListener
 		if ( fire > firetime )
 		{
 			if ( bulletSound is not null ) Sound.Play( bulletSound );
-			bullet.Clone( Transform.Position );
+			bullet.Clone( WorldPosition );
 			fire = 0;
 		}
 	}
@@ -94,7 +94,7 @@ public sealed class EnemyTrack : Component, Component.ITriggerListener
 			{
 				// 计算子弹在圆上的位置
 				float angle = i * (360f / numberOfBullets) + randomInt;
-				Vector3 spawnPosition = Transform.Position + new Vector3(
+				Vector3 spawnPosition = WorldPosition + new Vector3(
 					(float)Math.Cos( MathX.DegreeToRadian( angle ) ),
 					(float)Math.Sin( MathX.DegreeToRadian( angle ) ), 0 ) * circleRadius;
 				// 生成子弹
@@ -102,7 +102,7 @@ public sealed class EnemyTrack : Component, Component.ITriggerListener
 				GameObject bulletInstance = bullet2.Clone( spawnPosition );
 				Bullet bullet = bulletInstance.Components.Get<Bullet>();
 				// 设置子弹方向
-				bullet.direction = (spawnPosition - (Vector3)Transform.Position).Normal;
+				bullet.direction = (spawnPosition - (Vector3)WorldPosition).Normal;
 			}
 		}
 	}
@@ -135,6 +135,7 @@ public sealed class EnemyTrack : Component, Component.ITriggerListener
 	}
 	public void OnTriggerEnter( Collider other )
 	{
+		Log.Info( other.GameObject.Name );
 		if ( !isAttacked ) return;
 		GameTags tag = other.GameObject.Tags;
 		if ( tag.Has( "playerbullet" ) )
@@ -157,7 +158,7 @@ public sealed class EnemyTrack : Component, Component.ITriggerListener
 			o.Destroy();
 		}
 
-		var gameObjects2 = Scene.GetAllObjects( true ).Where( obj => obj.Tags.Has( "enemy" ) );
+		var gameObjects2 = Scene.GetAllObjects( true ).Where( obj => obj.Tags.Has( "clean" ) );
 		if ( !gameObjects2.Any() ) return;
 		var objects2 = gameObjects2.ToList();
 		foreach ( var o in objects2 )

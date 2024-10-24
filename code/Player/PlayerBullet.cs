@@ -14,8 +14,7 @@ public sealed class PlayerBullet : Component,Component.ITriggerListener
 	
 	void MoveBullet()
 	{
-		
-		Transform.Position += Vector3.Forward * speed * Time.Delta;
+		WorldPosition += Vector3.Forward * speed * Time.Delta;
 	}
 
 

@@ -79,14 +79,7 @@
 			</div>
 		</div>
 		
-		<div class="headbar">
-			<div class="text">
-				<h2 >Graze</h2>
-			</div>
-			<div class="score">
-				<h2>@Graze</h2>
-			</div>
-		</div>
+		
 		<div class="logobar">
 		</div>
 
@@ -104,7 +97,6 @@
     int Health=0;
     int Spellcard=0;
     String Power = "0.00 \\ 4.00";
-    int Graze=0;
 	int MaxPoint=0;
 
 	
@@ -132,7 +124,6 @@
 		Spellcard = touhouPlayer.spellcard;
 		Score = touhouPlayer.Score * (int)DifficultyRatio.GetScoreRatio();
 		MaxScore = GameManage.MaxScore;
-		Graze = touhouPlayer.Graze;
 		Power = (float)Math.Round(touhouPlayer.Power,2) + "\\ 4.00";
 		MaxPoint = touhouPlayer.MaxPoint;
 		
@@ -140,7 +131,7 @@
 	}
 
 
-    protected override int BuildHash() => System.HashCode.Combine(GetTime(),Health,Spellcard,MaxScore,Score,Graze,Power,MaxPoint);
+    protected override int BuildHash() => System.HashCode.Combine(GetTime(),Health,Spellcard,MaxScore,Score,Power,MaxPoint);
 	
 	
 }

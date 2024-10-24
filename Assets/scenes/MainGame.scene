@@ -25,9 +25,9 @@
             "prefab": "prefab/enemy.prefab"
           },
           "GameMusic": "sounds/touhoumusic.sound",
-          "Leave1Time": 60,
+          "Leave1Time": 10,
           "Leave2Time": 60,
-          "Leave3Time": 240,
+          "Leave3Time": 180,
           "TimeLeftUI": {
             "_type": "gameobject",
             "go": "bb2143ce-051a-46d8-82fd-b34c099aba34"
@@ -61,8 +61,23 @@
           "BodyGroups": 18446744073709551615,
           "MaterialOverride": "materials/dev/black_nonsolid.vmat",
           "Model": "models/dev/plane.vmdl",
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
           "RenderType": "On",
           "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.PlaneCollider",
+          "__guid": "971f2cab-5e5b-44d1-8608-52d72d1fde8c",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "99.79993,99.7995",
+          "Static": true,
+          "SurfaceVelocity": "0,0,0"
         }
       ],
       "Children": [
@@ -70,7 +85,7 @@
           "__guid": "4e3b1759-52da-4866-b71f-2cdd0263d5b9",
           "Flags": 0,
           "Name": "left",
-          "Position": "-64,-0.0001071569,-7.01915",
+          "Position": "-63.99999,-0.0001189824,7.934724",
           "Tags": "not",
           "Enabled": true,
           "Components": [
@@ -80,7 +95,8 @@
               "Center": "0,0,0",
               "IsTrigger": false,
               "Scale": "30,200,50",
-              "Static": true
+              "Static": true,
+              "SurfaceVelocity": "0,0,0"
             }
           ]
         },
@@ -88,7 +104,7 @@
           "__guid": "34ed8a33-034e-42cc-989c-afd7dd3e7c40",
           "Flags": 0,
           "Name": "right",
-          "Position": "64,0.00006122748,-7.01915",
+          "Position": "63.99999,0.00007381597,7.934724",
           "Tags": "not",
           "Enabled": true,
           "Components": [
@@ -98,7 +114,8 @@
               "Center": "0,0,0",
               "IsTrigger": false,
               "Scale": "30,200,50",
-              "Static": true
+              "Static": true,
+              "SurfaceVelocity": "0,0,0"
             }
           ]
         },
@@ -106,7 +123,7 @@
           "__guid": "4fca0b46-928b-41e6-a584-df7bd1c2f5ca",
           "Flags": 0,
           "Name": "top",
-          "Position": "-0.00008952728,64,-7.01915",
+          "Position": "-0.0001073262,63.99999,7.934724",
           "Tags": "y",
           "Enabled": true,
           "Components": [
@@ -116,7 +133,8 @@
               "Center": "0,0,0",
               "IsTrigger": false,
               "Scale": "200,30,50",
-              "Static": true
+              "Static": true,
+              "SurfaceVelocity": "0,0,0"
             }
           ]
         },
@@ -124,7 +142,7 @@
           "__guid": "59295a44-025c-422b-8bb9-edfc494cfb98",
           "Flags": 0,
           "Name": "buttom",
-          "Position": "0.0002082175,-73,-7.01915",
+          "Position": "0.0002743599,-72.55357,7.934724",
           "Tags": "y",
           "Enabled": true,
           "Components": [
@@ -134,7 +152,8 @@
               "Center": "0,0,0",
               "IsTrigger": false,
               "Scale": "200,50,50",
-              "Static": true
+              "Static": true,
+              "SurfaceVelocity": "0,0,0"
             }
           ]
         }
@@ -158,6 +177,7 @@
               "AutoScreenScale": true,
               "Opacity": 1,
               "Scale": 1,
+              "ScaleStrategy": "ConsistentHeight",
               "ZIndex": 100
             },
             {
@@ -190,6 +210,7 @@
               "AutoScreenScale": true,
               "Opacity": 1,
               "Scale": 1,
+              "ScaleStrategy": "ConsistentHeight",
               "ZIndex": 100
             },
             {
@@ -216,6 +237,7 @@
               "AutoScreenScale": true,
               "Opacity": 1,
               "Scale": 1,
+              "ScaleStrategy": "ConsistentHeight",
               "ZIndex": 1000
             },
             {
@@ -250,6 +272,12 @@
               "InteractionRange": 1000,
               "LookAtCamera": true,
               "PanelSize": "2000,70",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderScale": 1,
               "VerticalAlign": "Center"
             },
@@ -273,6 +301,7 @@
               "AutoScreenScale": true,
               "Opacity": 1,
               "Scale": 1,
+              "ScaleStrategy": "ConsistentHeight",
               "ZIndex": 1000
             },
             {
@@ -288,7 +317,7 @@
       "__guid": "da880084-7123-4888-805b-960ffc6e8862",
       "Flags": 0,
       "Name": "Player",
-      "Position": "-50,0,1",
+      "Position": "-54.45549,0,1",
       "Tags": "player",
       "Enabled": true,
       "Components": [
@@ -312,8 +341,6 @@
             "go": "e5dbf8fd-6a62-47fa-968d-f2bf669a5fb7",
             "component_type": "GameManage"
           },
-          "Graze": 0,
-          "GrazeSound": "sounds/graze.sound",
           "health": 2,
           "lerpSpeed": 0.5,
           "lowSpeed": 2.5,
@@ -334,19 +361,22 @@
           "Center": "0,0,0",
           "IsTrigger": false,
           "Radius": 1,
-          "Static": false
+          "Static": false,
+          "SurfaceVelocity": "0,0,0"
         },
         {
           "__type": "Sandbox.Rigidbody",
           "__guid": "380fedab-6bc5-442f-8d13-0deeda3b324f",
           "AngularDamping": 0,
-          "Gravity": false,
+          "Gravity": true,
           "LinearDamping": 0,
           "Locking": {
             "Z": true
           },
+          "MassCenterOverride": "0,0,0",
           "MassOverride": 0,
           "MotionEnabled": true,
+          "OverrideMassCenter": false,
           "RigidbodyFlags": "DisableCollisionSounds",
           "StartAsleep": false
         }
@@ -356,7 +386,6 @@
           "__guid": "9efc64c7-1ab1-45df-a810-181f5ee8358c",
           "Flags": 0,
           "Name": "body",
-          "Position": "0,0,0",
           "Enabled": true,
           "Components": [
             {
@@ -369,7 +398,14 @@
               "FlipHorizontal": false,
               "FlipVertical": false,
               "FogStrength": 1,
+              "Lighting": false,
               "Opaque": true,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "Size": "13,13",
               "Texture": "materials/decals/terry2_png_a9b4b33c.generated.vtex"
             }
@@ -391,7 +427,14 @@
               "FlipHorizontal": false,
               "FlipVertical": false,
               "FogStrength": 1,
+              "Lighting": false,
               "Opaque": false,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "Size": "10,10",
               "Texture": "sprite/decision_point.vtex"
             }
@@ -405,7 +448,7 @@
       "Name": "enemytrack",
       "Position": "40.93709,-0.00001904349,1",
       "Rotation": "0.5000001,0.4999998,-0.5000001,0.4999998",
-      "Tags": "boss",
+      "Tags": "enemy",
       "Enabled": true,
       "Components": [
         {
@@ -439,7 +482,8 @@
           "Center": "0,0,0",
           "IsTrigger": true,
           "Radius": 6,
-          "Static": false
+          "Static": false,
+          "SurfaceVelocity": "0,0,0"
         }
       ],
       "Children": [
@@ -447,7 +491,6 @@
           "__guid": "737a227f-2e2b-41be-bf8f-b7379d380650",
           "Flags": 0,
           "Name": "Sprite",
-          "Position": "0,0,0",
           "Enabled": true,
           "Components": [
             {
@@ -460,7 +503,14 @@
               "FlipHorizontal": false,
               "FlipVertical": false,
               "FogStrength": 1,
+              "Lighting": false,
               "Opaque": true,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "Size": "10,10",
               "Texture": "materials/decals/default_png_4cda46a2.generated.vtex"
             }
@@ -479,7 +529,6 @@
           "__guid": "724a51ab-8827-4113-9f7e-03451b8abbeb",
           "Flags": 0,
           "Name": "Cubemap",
-          "Position": "0,0,0",
           "Enabled": true,
           "Components": [
             {
@@ -494,6 +543,7 @@
               "Feathering": 0.02,
               "FrameInterval": 5,
               "MaxDistance": 512,
+              "MultiBounce": false,
               "Projection": "Box",
               "RenderDynamically": false,
               "TintColor": "1,1,1,1",
@@ -534,7 +584,7 @@
             {
               "__type": "Sandbox.CameraComponent",
               "__guid": "6c167965-db09-4bbd-b4e9-96bf16fc5b8c",
-              "BackgroundColor": "0.31163,0.66729,1,1",
+              "BackgroundColor": "0.47907,0.69612,1,1",
               "ClearFlags": "All",
               "FieldOfView": 60,
               "IsMainCamera": true,
@@ -673,7 +723,7 @@
       "Flags": 0,
       "Name": "uuz",
       "Position": "156.0018,0,1",
-      "Tags": "boss",
+      "Tags": "enemy",
       "Enabled": true,
       "Components": [
         {
@@ -686,7 +736,14 @@
           "FlipHorizontal": false,
           "FlipVertical": false,
           "FogStrength": 1,
+          "Lighting": false,
           "Opaque": false,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
           "Size": "30,30",
           "Texture": "sprite/uuz.vtex"
         },
@@ -725,15 +782,10 @@
           "Center": "0,0,0",
           "IsTrigger": true,
           "Radius": 5,
-          "Static": false
+          "Static": false,
+          "SurfaceVelocity": "0,0,0"
         }
       ]
-    },
-    {
-      "__guid": "d9473128-7234-4a44-b889-01d722464e49",
-      "Flags": 0,
-      "Name": "World",
-      "Enabled": true
     }
   ],
   "SceneProperties": {
@@ -741,9 +793,11 @@
     "MaxFixedUpdates": 5,
     "NetworkFrequency": 60,
     "NetworkInterpolation": true,
+    "PhysicsSubSteps": 1,
     "ThreadedAnimation": true,
     "TimeScale": 1,
     "UseFixedUpdate": true,
+    "Metadata": {},
     "NavMesh": {
       "Enabled": false,
       "IncludeStaticBodies": true,
@@ -757,9 +811,9 @@
       "IncludedBodies": ""
     }
   },
-  "Title": "minimal",
-  "Description": "",
-  "ResourceVersion": 1,
+  "ResourceVersion": 2,
+  "Title": null,
+  "Description": null,
   "__references": [],
-  "__version": 1
+  "__version": 2
 }

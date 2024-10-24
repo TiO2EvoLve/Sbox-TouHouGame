@@ -1,0 +1,277 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\player\\touhouplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|solutionrelative:code\\player\\touhouplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\ui\\scoreboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|solutionrelative:code\\ui\\scoreboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\enemy\\enemytrack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|solutionrelative:code\\enemy\\enemytrack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\enemy\\boss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|solutionrelative:code\\enemy\\boss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\gamemanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|solutionrelative:code\\gamemanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\player\\playerbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|solutionrelative:code\\player\\playerbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\difficultyratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|solutionrelative:code\\difficultyratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\gamesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|solutionrelative:code\\gamesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\ui\\dead.razor.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|solutionrelative:code\\ui\\dead.razor.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\ui\\dead.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|solutionrelative:code\\ui\\dead.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|solutionrelative:code\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\bullet\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|solutionrelative:code\\bullet\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\effect\\scenelinerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|solutionrelative:code\\effect\\scenelinerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DDD0665-950C-B4D6-56B9-A5A4C73C7423}|..\\tools\\Code\\Base Editor Library.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\tools\\code\\scene\\mesh\\meshface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CFCECAD-98E9-581B-90CF-75E5F2B140CA}|..\\base\\Code\\Base Library.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\base\\code\\components\\citizen\\citizenanimationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ScoreBoard.razor",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\UI\\ScoreBoard.razor",
+              "RelativeDocumentMoniker": "code\\UI\\ScoreBoard.razor",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\UI\\ScoreBoard.razor",
+              "RelativeToolTip": "code\\UI\\ScoreBoard.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-23T11:05:30.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DifficultyRatio.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\DifficultyRatio.cs",
+              "RelativeDocumentMoniker": "code\\DifficultyRatio.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\DifficultyRatio.cs",
+              "RelativeToolTip": "code\\DifficultyRatio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T10:53:53.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GameSettings.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\GameSettings.cs",
+              "RelativeDocumentMoniker": "code\\GameSettings.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\GameSettings.cs",
+              "RelativeToolTip": "code\\GameSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T10:53:52.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Dead.razor.scss",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\UI\\Dead.razor.scss",
+              "RelativeDocumentMoniker": "code\\UI\\Dead.razor.scss",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\UI\\Dead.razor.scss",
+              "RelativeToolTip": "code\\UI\\Dead.razor.scss",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2024-10-23T10:39:56.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Dead.razor",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\UI\\Dead.razor",
+              "RelativeDocumentMoniker": "code\\UI\\Dead.razor",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\UI\\Dead.razor",
+              "RelativeToolTip": "code\\UI\\Dead.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-23T10:39:50.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameManage.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\GameManage.cs",
+              "RelativeDocumentMoniker": "code\\GameManage.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\GameManage.cs",
+              "RelativeToolTip": "code\\GameManage.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAArwBcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T13:34:13.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Boss.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\Enemy\\Boss.cs",
+              "RelativeDocumentMoniker": "code\\Enemy\\Boss.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\Enemy\\Boss.cs",
+              "RelativeToolTip": "code\\Enemy\\Boss.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAAMEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T13:32:49.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TouhouPlayer.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\Player\\TouhouPlayer.cs",
+              "RelativeDocumentMoniker": "code\\Player\\TouhouPlayer.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\Player\\TouhouPlayer.cs",
+              "RelativeToolTip": "code\\Player\\TouhouPlayer.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAHEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T13:31:53.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerBullet.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\Player\\PlayerBullet.cs",
+              "RelativeDocumentMoniker": "code\\Player\\PlayerBullet.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\Player\\PlayerBullet.cs",
+              "RelativeToolTip": "code\\Player\\PlayerBullet.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T13:31:37.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\Enemy\\Enemy.cs",
+              "RelativeDocumentMoniker": "code\\Enemy\\Enemy.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\Enemy\\Enemy.cs",
+              "RelativeToolTip": "code\\Enemy\\Enemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBMwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T13:28:22.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\Bullet\\Bullet.cs",
+              "RelativeDocumentMoniker": "code\\Bullet\\Bullet.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\Bullet\\Bullet.cs",
+              "RelativeToolTip": "code\\Bullet\\Bullet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T13:17:19.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SceneLineRenderer.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\Effect\\SceneLineRenderer.cs",
+              "RelativeDocumentMoniker": "code\\Effect\\SceneLineRenderer.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\Effect\\SceneLineRenderer.cs",
+              "RelativeToolTip": "code\\Effect\\SceneLineRenderer.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAIAxwDsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T13:17:00.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MeshFace.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\tools\\code\\Scene\\Mesh\\MeshFace.cs",
+              "RelativeDocumentMoniker": "..\\tools\\code\\Scene\\Mesh\\MeshFace.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\sbox\\addons\\tools\\code\\Scene\\Mesh\\MeshFace.cs",
+              "RelativeToolTip": "..\\tools\\code\\Scene\\Mesh\\MeshFace.cs",
+              "ViewState": "AgIAAJACAAAAAAAAAAAMwJ0CAAB4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T13:16:59.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CitizenAnimationHelper.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\base\\code\\Components\\Citizen\\CitizenAnimationHelper.cs",
+              "RelativeDocumentMoniker": "..\\base\\code\\Components\\Citizen\\CitizenAnimationHelper.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\sbox\\addons\\base\\code\\Components\\Citizen\\CitizenAnimationHelper.cs",
+              "RelativeToolTip": "..\\base\\code\\Components\\Citizen\\CitizenAnimationHelper.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAMBAwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T13:16:41.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemyTrack.cs",
+              "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\Enemy\\EnemyTrack.cs",
+              "RelativeDocumentMoniker": "code\\Enemy\\EnemyTrack.cs",
+              "ToolTip": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\Enemy\\EnemyTrack.cs",
+              "RelativeToolTip": "code\\Enemy\\EnemyTrack.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAswKAAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T13:15:08.457Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

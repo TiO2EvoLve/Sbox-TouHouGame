@@ -1,37 +1,67 @@
 {
   "gizmo.settings": {
     "Value": "{\u0022EditMode\u0022:\u0022position\u0022,\u0022Selection\u0022:true,\u0022ViewMode\u0022:\u00223d\u0022,\u0022GizmosEnabled\u0022:true,\u0022GizmoScale\u0022:1,\u0022GridSpacing\u0022:32,\u0022SnapToGrid\u0022:false,\u0022SnapToAngles\u0022:true,\u0022AngleSpacing\u0022:15,\u0022GlobalSpace\u0022:false,\u0022DebugActionGraphs\u0022:false}",
-    "Timeout": 1731593378,
+    "Timeout": 1732276644,
     "DeleteAt": 0
   },
   "scenes/menu.scene.Viewport0": {
     "Value": "{\u0022CameraPosition\u0022:\u00220,0,105.3189\u0022,\u0022CameraRotation\u0022:\u00220.1428998,0.04781343,-0.9374956,0.3136806\u0022,\u0022CameraOrthoHeight\u0022:1000}",
-    "Timeout": 1731593378,
+    "Timeout": 1732276644,
     "DeleteAt": 0
   },
   "scene.lastopened": {
-    "Value": "[\u0022scenes/menu.scene\u0022]",
-    "Timeout": 1731593286,
+    "Value": "[\u0022scenes/maingame.scene\u0022,\u0022scenes/menu.scene\u0022]",
+    "Timeout": 1732276384,
     "DeleteAt": 0
   },
   "SceneView.Viewport0.Settings": {
-    "Value": "{\u0022CameraPosition\u0022:\u00220,0,105.3189\u0022,\u0022CameraRotation\u0022:\u00220.1428998,0.04781343,-0.9374956,0.3136806\u0022,\u0022View\u0022:0,\u0022RenderMode\u0022:0,\u0022WireframeMode\u0022:false,\u0022EnablePostProcessing\u0022:true,\u0022ShowGrid\u0022:true,\u0022GridOpacity\u0022:0.2,\u0022GridAxis\u0022:0,\u0022CameraOrthoHeight\u0022:1000}",
-    "Timeout": 1731593378,
+    "Value": "{\u0022CameraPosition\u0022:\u0022-44.02711,0.0143708,24.36468\u0022,\u0022CameraRotation\u0022:\u00220.009212426,0.1699988,-0.05332175,0.9839575\u0022,\u0022View\u0022:0,\u0022RenderMode\u0022:0,\u0022WireframeMode\u0022:false,\u0022EnablePostProcessing\u0022:true,\u0022ShowGrid\u0022:true,\u0022GridOpacity\u0022:0.2,\u0022GridAxis\u0022:0,\u0022CameraOrthoHeight\u0022:1000}",
+    "Timeout": 1732276644,
     "DeleteAt": 0
   },
   ".Viewport0": {
-    "Value": "{\u0022CameraPosition\u0022:\u00220,0,105.3189\u0022,\u0022CameraRotation\u0022:\u0022-0.5000003,0.5,0.5,0.4999996\u0022,\u0022CameraOrthoHeight\u0022:1000}",
-    "Timeout": 1731593293,
+    "Value": "{\u0022CameraPosition\u0022:\u00221356.168,-2058.684,-10796.59\u0022,\u0022CameraRotation\u0022:\u0022-0.2255343,0.1150851,0.8617098,0.4397111\u0022,\u0022CameraOrthoHeight\u0022:1000}",
+    "Timeout": 1732276595,
     "DeleteAt": 0
   },
   "scenes/maingame.scene.Viewport0": {
-    "Value": "{\u0022CameraPosition\u0022:\u00220,0,105.3189\u0022,\u0022CameraRotation\u0022:\u0022-0.5000003,0.5,0.5,0.4999996\u0022,\u0022CameraOrthoHeight\u0022:1000}",
-    "Timeout": 1731593376,
+    "Value": "{\u0022CameraPosition\u0022:\u0022-44.02711,0.0143708,24.36468\u0022,\u0022CameraRotation\u0022:\u00220.009212426,0.1699988,-0.05332175,0.9839575\u0022,\u0022CameraOrthoHeight\u0022:1000}",
+    "Timeout": 1732276644,
     "DeleteAt": 0
   },
   "SceneView.Layout": {
     "Value": "{\u0022Layout\u0022:0,\u0022SplitterState\u0022:[]}",
-    "Timeout": 1731593378,
+    "Timeout": 1732276644,
+    "DeleteAt": 0
+  },
+  "prefab/playerbullet.prefab.Viewport0": {
+    "Value": "{\u0022CameraPosition\u0022:\u0022-14.06193,4.132248,11.42722\u0022,\u0022CameraRotation\u0022:\u00220.01644191,0.2453267,-0.06481761,0.9671314\u0022,\u0022CameraOrthoHeight\u0022:1000}",
+    "Timeout": 1732271800,
+    "DeleteAt": 0
+  },
+  "prefab/enemy.prefab.Viewport0": {
+    "Value": "{\u0022CameraPosition\u0022:\u0022-22.99166,-5.181586,21.21985\u0022,\u0022CameraRotation\u0022:\u0022-0.03222968,0.3101133,0.09821918,0.9450629\u0022,\u0022CameraOrthoHeight\u0022:1000}",
+    "Timeout": 1732271798,
+    "DeleteAt": 0
+  },
+  "prefab/enemytrack.prefab.Viewport0": {
+    "Value": "{\u0022CameraPosition\u0022:\u0022-292.1902,-46.69083,211.6812\u0022,\u0022CameraRotation\u0022:\u0022-0.0200132,0.3094773,0.06135123,0.9487146\u0022,\u0022CameraOrthoHeight\u0022:1000}",
+    "Timeout": 1732271799,
+    "DeleteAt": 0
+  },
+  "AssetBrowser.History.Texture,Image..ViewMode": {
+    "Value": "3",
+    "Timeout": 1732198884,
+    "DeleteAt": 0
+  },
+  "AssetBrowser.History.Texture,Image..ShowJunkFiles": {
+    "Value": "false",
+    "Timeout": 1732198884,
+    "DeleteAt": 0
+  },
+  "AssetBrowser.History.Texture,Image..ShowRecursiveFiles": {
+    "Value": "false",
+    "Timeout": 1732198884,
     "DeleteAt": 0
   }
 }

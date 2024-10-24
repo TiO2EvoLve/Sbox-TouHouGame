@@ -50,7 +50,6 @@ public sealed class Boss : Component,Component.ITriggerListener
 			DestroyAll();
 			GameObject.Destroy();
 			BossHealth.Enabled = false;
-			Log.Error( "Game Fnish,hold Esc to quit game" );
 		}
 	}
 
@@ -190,14 +189,6 @@ public sealed class Boss : Component,Component.ITriggerListener
 		if ( !gameObjects.Any() ) return;
 		var objects = gameObjects.ToList();
 		foreach ( var o in objects )
-		{
-			o.Destroy();
-		}
-
-		var gameObjects2 = Scene.GetAllObjects( true ).Where( obj => obj.Tags.Has( "enemy" ) );
-		if ( !gameObjects2.Any() ) return;
-		var objects2 = gameObjects2.ToList();
-		foreach ( var o in objects2 )
 		{
 			o.Destroy();
 		}

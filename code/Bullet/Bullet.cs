@@ -13,7 +13,7 @@ public sealed class Bullet : Component,Component.ITriggerListener
 	
 	protected override void OnFixedUpdate()
 	{
-		Transform.Position += (direction * speed * Time.Delta);
+		WorldPosition += (direction * speed * Time.Delta);
 	}
 	public void OnTriggerEnter( Collider other )
 	{

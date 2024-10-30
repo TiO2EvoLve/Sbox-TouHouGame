@@ -25,9 +25,9 @@
             "prefab": "prefab/enemy.prefab"
           },
           "GameMusic": "sounds/touhoumusic.sound",
-          "Leave1Time": 10,
+          "Leave1Time": 60,
           "Leave2Time": 60,
-          "Leave3Time": 180,
+          "Leave3Time": 120,
           "TimeLeftUI": {
             "_type": "gameobject",
             "go": "bb2143ce-051a-46d8-82fd-b34c099aba34"

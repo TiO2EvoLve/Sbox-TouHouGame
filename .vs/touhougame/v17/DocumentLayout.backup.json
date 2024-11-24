@@ -84,8 +84,7 @@
               "RelativeToolTip": "code\\UI\\ScoreBoard.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T11:05:30.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T11:05:30.666Z"
             },
             {
               "$type": "Document",
@@ -97,8 +96,7 @@
               "RelativeToolTip": "code\\DifficultyRatio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T10:53:53.342Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T10:53:53.342Z"
             },
             {
               "$type": "Document",
@@ -110,8 +108,7 @@
               "RelativeToolTip": "code\\GameSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T10:53:52.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T10:53:52.268Z"
             },
             {
               "$type": "Document",
@@ -123,8 +120,7 @@
               "RelativeToolTip": "code\\UI\\Dead.razor.scss",
               "ViewState": "AgIAACQAAAAAAAAAAAAAACsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
-              "WhenOpened": "2024-10-23T10:39:56.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T10:39:56.962Z"
             },
             {
               "$type": "Document",
@@ -136,8 +132,7 @@
               "RelativeToolTip": "code\\UI\\Dead.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T10:39:50.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T10:39:50.429Z"
             },
             {
               "$type": "Document",
@@ -149,8 +144,7 @@
               "RelativeToolTip": "code\\GameManage.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAArwBcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T13:34:13.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T13:34:13.684Z"
             },
             {
               "$type": "Document",
@@ -162,8 +156,7 @@
               "RelativeToolTip": "code\\Enemy\\Boss.cs",
               "ViewState": "AgIAAK4AAAAAAAAAAAAAAMEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T13:32:49.834Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T13:32:49.834Z"
             },
             {
               "$type": "Document",
@@ -173,7 +166,7 @@
               "RelativeDocumentMoniker": "code\\Player\\TouhouPlayer.cs",
               "ToolTip": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\Player\\TouhouPlayer.cs",
               "RelativeToolTip": "code\\Player\\TouhouPlayer.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAAHEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAUwGwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T13:31:53.402Z",
               "EditorCaption": ""
@@ -188,8 +181,7 @@
               "RelativeToolTip": "code\\Player\\PlayerBullet.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwBgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T13:31:37.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T13:31:37.438Z"
             },
             {
               "$type": "Document",
@@ -201,8 +193,7 @@
               "RelativeToolTip": "code\\Enemy\\Enemy.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBMwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T13:28:22.711Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T13:28:22.711Z"
             },
             {
               "$type": "Document",
@@ -214,8 +205,7 @@
               "RelativeToolTip": "code\\Bullet\\Bullet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T13:17:19.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T13:17:19.877Z"
             },
             {
               "$type": "Document",
@@ -227,8 +217,7 @@
               "RelativeToolTip": "code\\Effect\\SceneLineRenderer.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAIAxwDsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T13:17:00.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T13:17:00.114Z"
             },
             {
               "$type": "Document",
@@ -240,8 +229,7 @@
               "RelativeToolTip": "..\\tools\\code\\Scene\\Mesh\\MeshFace.cs",
               "ViewState": "AgIAAJACAAAAAAAAAAAMwJ0CAAB4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T13:16:59.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T13:16:59.902Z"
             },
             {
               "$type": "Document",
@@ -253,8 +241,7 @@
               "RelativeToolTip": "..\\base\\code\\Components\\Citizen\\CitizenAnimationHelper.cs",
               "ViewState": "AgIAADUAAAAAAAAAAMBAwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T13:16:41.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T13:16:41.731Z"
             },
             {
               "$type": "Document",
@@ -266,8 +253,7 @@
               "RelativeToolTip": "code\\Enemy\\EnemyTrack.cs",
               "ViewState": "AgIAAIIAAAAAAAAAAAAswKAAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T13:15:08.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T13:15:08.457Z"
             }
           ]
         }

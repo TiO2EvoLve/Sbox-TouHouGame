@@ -59,6 +59,7 @@
           "__type": "Sandbox.ModelRenderer",
           "__guid": "a0fb98fe-ae05-4fcb-b5cf-0376ae2252a7",
           "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
           "MaterialOverride": "materials/dev/black_nonsolid.vmat",
           "Model": "models/dev/plane.vmdl",
           "RenderOptions": {
@@ -371,7 +372,12 @@
           "Gravity": true,
           "LinearDamping": 0,
           "Locking": {
-            "Z": true
+            "X": false,
+            "Y": false,
+            "Z": true,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
           },
           "MassCenterOverride": "0,0,0",
           "MassOverride": 0,
@@ -400,6 +406,7 @@
               "FogStrength": 1,
               "Lighting": false,
               "Opaque": true,
+              "Pivot": "0.5,0.5",
               "RenderOptions": {
                 "GameLayer": true,
                 "OverlayLayer": false,
@@ -429,6 +436,7 @@
               "FogStrength": 1,
               "Lighting": false,
               "Opaque": false,
+              "Pivot": "0.5,0.5",
               "RenderOptions": {
                 "GameLayer": true,
                 "OverlayLayer": false,
@@ -505,6 +513,7 @@
               "FogStrength": 1,
               "Lighting": false,
               "Opaque": true,
+              "Pivot": "0.5,0.5",
               "RenderOptions": {
                 "GameLayer": true,
                 "OverlayLayer": false,
@@ -602,8 +611,10 @@
               "__type": "Sandbox.Bloom",
               "__guid": "cd6b2b53-b783-4c91-94c4-a63f6c077b32",
               "BloomColor": {
+                "blend": "Linear",
                 "color": [
                   {
+                    "t": 0,
                     "c": "1,1,1,1"
                   },
                   {
@@ -615,11 +626,18 @@
               },
               "BloomCurve": [
                 {
-                  "y": 0.5
+                  "x": 0,
+                  "y": 0.5,
+                  "in": 0,
+                  "out": 0,
+                  "mode": "Mirrored"
                 },
                 {
                   "x": 1,
-                  "y": 1
+                  "y": 1,
+                  "in": 0,
+                  "out": 0,
+                  "mode": "Mirrored"
                 }
               ],
               "Mode": "Additive",
@@ -659,8 +677,10 @@
               "__type": "LineRender",
               "__guid": "7d4713f8-cde1-4187-b95d-aceed4d3ec3b",
               "Color": {
+                "blend": "Linear",
                 "color": [
                   {
+                    "t": 0,
                     "c": "1,0,0,1"
                   },
                   {
@@ -701,15 +721,25 @@
               "StartCap": "Rounded",
               "Width": [
                 {
-                  "y": 1
+                  "x": 0,
+                  "y": 1,
+                  "in": 0,
+                  "out": 0,
+                  "mode": "Mirrored"
                 },
                 {
                   "x": 0.5,
-                  "y": 1
+                  "y": 1,
+                  "in": 0,
+                  "out": 0,
+                  "mode": "Mirrored"
                 },
                 {
                   "x": 1,
-                  "y": 1
+                  "y": 1,
+                  "in": 0,
+                  "out": 0,
+                  "mode": "Mirrored"
                 }
               ],
               "Wireframe": false
@@ -738,6 +768,7 @@
           "FogStrength": 1,
           "Lighting": false,
           "Opaque": false,
+          "Pivot": "0.5,0.5",
           "RenderOptions": {
             "GameLayer": true,
             "OverlayLayer": false,

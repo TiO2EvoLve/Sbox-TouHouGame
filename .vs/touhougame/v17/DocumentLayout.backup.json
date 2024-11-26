@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\gamemanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|solutionrelative:code\\gamemanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\player\\touhouplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|solutionrelative:code\\player\\touhouplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\enemy\\boss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|solutionrelative:code\\enemy\\boss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\gamemanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|solutionrelative:code\\gamemanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A322BB0-CB81-9359-0557-3B0E4AFD884E}|Code\\touhougame.csproj|e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\player\\playerbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -68,7 +68,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -76,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ScoreBoard.razor",
               "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\UI\\ScoreBoard.razor",
               "RelativeDocumentMoniker": "code\\UI\\ScoreBoard.razor",
@@ -136,19 +136,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "GameManage.cs",
               "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\GameManage.cs",
               "RelativeDocumentMoniker": "code\\GameManage.cs",
               "ToolTip": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\GameManage.cs",
               "RelativeToolTip": "code\\GameManage.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAArwBcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T13:34:13.684Z"
+              "WhenOpened": "2024-10-22T13:34:13.684Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Boss.cs",
               "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\Enemy\\Boss.cs",
               "RelativeDocumentMoniker": "code\\Enemy\\Boss.cs",
@@ -160,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TouhouPlayer.cs",
               "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\Player\\TouhouPlayer.cs",
               "RelativeDocumentMoniker": "code\\Player\\TouhouPlayer.cs",
@@ -245,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "EnemyTrack.cs",
               "DocumentMoniker": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\code\\Enemy\\EnemyTrack.cs",
               "RelativeDocumentMoniker": "code\\Enemy\\EnemyTrack.cs",

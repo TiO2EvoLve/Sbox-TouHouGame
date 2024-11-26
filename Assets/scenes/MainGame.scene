@@ -27,7 +27,7 @@
           "GameMusic": "sounds/touhoumusic.sound",
           "Leave1Time": 60,
           "Leave2Time": 60,
-          "Leave3Time": 120,
+          "Leave3Time": 60,
           "TimeLeftUI": {
             "_type": "gameobject",
             "go": "bb2143ce-051a-46d8-82fd-b34c099aba34"
@@ -538,6 +538,7 @@
           "__guid": "724a51ab-8827-4113-9f7e-03451b8abbeb",
           "Flags": 0,
           "Name": "Cubemap",
+          "Position": "-120.018,-24.20395,130.7683",
           "Enabled": true,
           "Components": [
             {
@@ -545,8 +546,8 @@
               "__guid": "94d5c3ad-c116-40a5-ad53-00802386de02",
               "Texture": "textures/cubemaps/default2.vtex",
               "Bounds": {
-                "Mins": "-200,-200,-100",
-                "Maxs": "200,200,100"
+                "Mins": "-100,-100,-100",
+                "Maxs": "100,100,100"
               },
               "DelayBetweenUpdates": 0.1,
               "Feathering": 0.02,

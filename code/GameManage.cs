@@ -194,6 +194,7 @@ public class GameManage : Component
 	{
 		if ( GameMusic is not null )
 		{
+			Log.Info( "PlayMusic" );
 			Sound.Play( GameMusic );
 			GameMusic.Volume = GameSettings.Instance.MusicVolume;
 		}

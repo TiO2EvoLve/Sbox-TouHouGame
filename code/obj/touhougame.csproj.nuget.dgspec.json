@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\Code\\touhougame.csproj": {}
+    "e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\Code\\touhougame.csproj": {}
   },
   "projects": {
     "E:\\Steam\\steamapps\\common\\sbox\\addons\\base\\Code\\Base Library.csproj": {
@@ -67,14 +67,14 @@
         }
       }
     },
-    "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\Code\\touhougame.csproj": {
+    "e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\Code\\touhougame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\Code\\touhougame.csproj",
+        "projectUniqueName": "e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\Code\\touhougame.csproj",
         "projectName": "touhougame",
-        "projectPath": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\Code\\touhougame.csproj",
+        "projectPath": "e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\Code\\touhougame.csproj",
         "packagesPath": "C:\\Users\\32901\\.nuget\\packages\\",
-        "outputPath": "E:\\Steam\\steamapps\\common\\sbox\\addons\\touhougame\\Code\\obj\\",
+        "outputPath": "e:\\steam\\steamapps\\common\\sbox\\addons\\touhougame\\Code\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
